@@ -1,0 +1,72 @@
+/* Include Graphik font from Hubspot */
+@font-face {
+  font-family: "Graphik";
+  font-weight: 400;
+  font-style: normal;
+  src: url("//cdn2.hubspot.net/hubfs/344141/Font/graphik/Graphik-Regular-Cy-Gr.woff") format("woff");
+}
+@font-face {
+  font-family: "Graphik";
+  font-weight: 400;
+  font-style: italic;
+  src: url("//cdn2.hubspot.net/hubfs/344141/Font/graphik/Graphik-RegularItalic-Cy-Gr.woff") format("woff");
+}
+@font-face {
+  font-family: "Graphik";
+  font-weight: 600;
+  font-style: normal;
+  src: url("//cdn2.hubspot.net/hubfs/344141/Font/graphik/Graphik-Semibold-Cy-Gr.woff") format("woff");
+}
+@font-face {
+  font-family: "Graphik";
+  font-weight: 600;
+  font-style: italic;
+  src: url("//cdn2.hubspot.net/hubfs/344141/Font/graphik/Graphik-SemiboldItalic-Cy-Gr.woff") format("woff");
+}
+
+/* Regular */
+html body,
+html .body,
+html .main_navigation ul.sub-menu li a span,
+html .banner_content h1,
+html .inner_banner_heading h1,
+html .panel p,
+html .Customer h2,
+html .paress_release_content h1,
+html .academic_form_fild_checkbox label {
+  font-family: Graphik !important;
+}
+
+/* BOLD */
+html body h1,
+html body h2,
+html body h3,
+html body strong {
+  font-family: Graphik !important;
+  font-weight: 600 !important;
+}
+
+/* ## Blog skyworld Header ## */
+.main_navigation li a,
+.menu_account h5,
+.organization_item h4,
+.mangoThree_latest_item h4,
+.accordion,
+.how_accordion,
+p.caps,
+.top_nine_banner .inner_banner_heading h1,
+.ourcse_overview_heading h4,
+.chapter_heading h3,
+.related_resourges_heading h4 span,
+.current_sale h5,
+.press_release_content_item h3,
+.event_details_form_inner h5 {
+  font-family: Graphik !important;
+}
+
+.learning_section h2,
+.learning_heading h2,
+.live-txt h2 section.tab1 h2 {
+  font-family: Graphik !important;
+  font-weight: 600 !important;
+}

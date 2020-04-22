@@ -1,0 +1,101 @@
+/* Include Graphik font from Hubspot */
+@font-face {
+  font-family: "Graphik";
+  font-weight: 400;
+  font-style: normal;
+  src: url("//cdn2.hubspot.net/hubfs/344141/Font/graphik/Graphik-Regular-Cy-Gr.woff")
+    format("woff");
+}
+@font-face {
+  font-family: "Graphik";
+  font-weight: 400;
+  font-style: italic;
+  src: url("//cdn2.hubspot.net/hubfs/344141/Font/graphik/Graphik-RegularItalic-Cy-Gr.woff")
+    format("woff");
+}
+@font-face {
+  font-family: "Graphik";
+  font-weight: 600;
+  font-style: normal;
+  src: url("//cdn2.hubspot.net/hubfs/344141/Font/graphik/Graphik-Semibold-Cy-Gr.woff")
+    format("woff");
+}
+@font-face {
+  font-family: "Graphik";
+  font-weight: 600;
+  font-style: italic;
+  src: url("//cdn2.hubspot.net/hubfs/344141/Font/graphik/Graphik-SemiboldItalic-Cy-Gr.woff")
+    format("woff");
+}
+
+/* Simple override for mango skyworld domain*/
+body {
+  font-family: Graphik, sans-serif;
+}
+
+p {
+  font-size: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-family: Graphik;
+  font-weight: 600;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1em;
+  margin-bottom: 0.5em;
+}
+a[class^="all_btn"],
+a[class*="all_btn"] {
+  align-self: center;
+}
+.switch-field {
+  width: auto;
+}
+.footer-social-link a {
+  line-height: 2em;
+}
+.inner_banner_heading h1 {
+  font-size: 3.5em;
+}
+.survival_basics_translate li h5.phonetics_content {
+  font-family: sans-serif;
+}
+
+@media screen and (min-width: 992px) {
+  .main_navigation ul.sub-menu li a span {
+    padding-top: 0.5em;
+    line-height: 1.25em;
+    font-size: 0.75em;
+    color: #666;
+  }
+  .main_navigation ul ul {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.25);
+  }
+  .mean-expand {
+    top: 1.25em;
+  }
+  .main_navigation ul ul li:first-child {
+    padding-bottom: 0.25rem;
+  }
+  .main_navigation ul ul li {
+    margin: 0 0 0.25rem;
+  }
+}

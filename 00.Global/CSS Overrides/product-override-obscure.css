@@ -1,0 +1,30 @@
+.c01227 {
+    color: rgba(0,0,0,0);
+    background:#ddd;
+}
+.gym__header__language-selector .gym__header__language-selector__current-language-icon img {
+    display:none;
+}
+.gym__header__language-selector .gym__header__language-selector__current-language-icon {
+    background:#ddd;
+    border-radius:50%;
+}
+.c01122 {
+    background: #ddd;
+    color: rgba(0,0,0,0);
+}
+.c01124 {
+    background: #ddd;
+    color: rgba(0,0,0,0);
+}
+.gym__header__language-selector .languageName {
+    background: rgba(255,255,255,.5);
+    color: rgba(0,0,0,0);
+}
+.gym__header__language-selector .languageName .svg {
+    display:none;   
+}
+.gym__header__right-nav-area .gym__profile__nav .name {
+    background: rgba(255,255,255,.5);
+    color: rgba(0,0,0,0);
+}

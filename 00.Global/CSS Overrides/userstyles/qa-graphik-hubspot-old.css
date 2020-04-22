@@ -1,0 +1,46 @@
+/* Hubspots purchased template with skyworld header is messier */
+
+/* Regular */
+html body,
+html .body,
+html .main_navigation ul.sub-menu li a span,
+html .banner_content h1,
+html .inner_banner_heading h1,
+html .panel p,
+html .Customer h2,
+html .paress_release_content h1,
+html .academic_form_fild_checkbox label {
+  font-family: Graphik LCG Regular !important;
+}
+
+/* BOLD */
+html body h1,
+html body h2,
+html body h3,
+html body strong {
+  font-family: Graphik Semibold !important;
+}
+
+/* ## Blog skyworld Header ## */
+.main_navigation li a,
+.menu_account h5,
+.organization_item h4,
+.mangoThree_latest_item h4,
+.accordion,
+.how_accordion,
+p.caps,
+.top_nine_banner .inner_banner_heading h1,
+.ourcse_overview_heading h4,
+.chapter_heading h3,
+.related_resourges_heading h4 span,
+.current_sale h5,
+.press_release_content_item h3,
+.event_details_form_inner h5 {
+  font-family: Graphik LCG Regular !important;
+}
+
+.learning_section h2,
+.learning_heading h2,
+.live-txt h2 section.tab1 h2 {
+  font-family: Graphik Semibold !important;
+}
