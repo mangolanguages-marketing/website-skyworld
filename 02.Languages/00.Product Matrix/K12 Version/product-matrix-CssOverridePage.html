@@ -1,0 +1,147 @@
+<script type='text/javascript'>
+    document.addEventListener('DOMContentLoaded', function (event) {
+        $('.privacy_team_tab > .row > div').first().removeClass().addClass('col-12');
+        $('.privacy_team_tab > .row > div').last().removeClass('col-lg-9 col-md-8');
+        $('.top_nine_banner').remove();
+        $( ".specialty td:first-child" ).prepend( "<span>+</span>" );
+        $('.tableizer-table td:nth-of-type(1)').attr('data-label', 'Course Name');
+        $('.tableizer-table td:nth-of-type(2)').attr('data-label', 'Units');
+        $('.tableizer-table td:nth-of-type(3)').attr('data-label', 'Chapters');
+        $('.tableizer-table td:nth-of-type(4)').attr('data-label', 'Lessons');
+        $('.tableizer-table td:nth-of-type(5)').attr('data-label', 'Assessment/Placement');
+        $('.tableizer-table td:nth-of-type(6)').attr('data-label', 'Premium Course');
+        $('.tableizer-table td:nth-of-type(7)').attr('data-label', 'Classroom Guides');
+        $('.tableizer-table td:nth-of-type(8)').attr('data-label', 'Listening and Reading Activities');
+    });
+</script>
+<style type="text/css">
+
+    html {
+        overflow-y: scroll;
+    }
+    .header_top {
+        display:none;
+    }
+
+    table.tableizer-table {
+        border-collapse: collapse;
+        width: 100%;
+        line-height: normal;
+    }
+    table tr.specialty td {
+        
+    }
+    table tr.specialty td:first-child {
+        font-style:italic;
+        padding-left: 1rem;
+        font-size:.95em;
+        position: relative;
+    }
+    table tr.specialty td:first-child span {
+        font-style:normal;
+        margin-right:.25em;
+        font-weight:bold;
+    }
+
+    .tableizer-table td {
+        padding: 4px;
+        margin: 3px;
+        border: 1px solid #333;
+    }
+
+    .tableizer-table td:nth-child(1) {
+        text-align: left;
+    }
+
+    .tableizer-table td:nth-child(n+5) {
+        color: #00B140;
+    }
+
+    .tableizer-table th {
+        background-color: #444;
+        color: #FFF;
+        font-weight: bold;
+    }
+
+    @media screen and (max-width: 992px) {
+        .container {
+            max-width: 100%;
+        }
+        .privacy_team_tab_panel {
+            padding-top:7rem;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+
+        /* Hide column labels */
+        .tableizer-table thead tr {
+            display: none;
+        }
+
+        .tableizer-table tr {
+            border: 0.125em solid #333;
+        }
+
+        /* Leave a space between table rows */
+        .tableizer-table tr+tr {
+            margin-top: 1.5em;
+        }
+
+        /* Get table cells to act like rows */
+        .tableizer-table tr,
+        .tableizer-table td {
+            display: block;
+        }
+
+        .tableizer-table td {
+            border: none;
+            border-bottom: 1px solid #ccc;
+            /* Leave a space for data labels */
+            padding-left: 50%;
+            text-align: left;
+        }
+
+        .tableizer-table td:first-child {
+            background: #efefef;
+            margin: 0;
+            padding: .75em;
+            border: 0 none;
+        }
+
+        .tableizer-table td:last-child {
+            border: 0 none;
+        }
+
+        /* Add data labels */
+        .tableizer-table td:before {
+            content: attr(data-label);
+            display: inline-block;
+            font-weight: bold;
+            line-height: 1.5;
+            margin-left: -100%;
+            width: 100%;
+            color: #333;
+        }
+        .tableizer-table td:first-child:before {
+            display:none;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .privacy_team_tab {
+            padding: 0;
+        }
+
+        /* Stack labels vertically on smaller screens */
+        .tableizer-table td {
+            padding-left: 0.75em;
+        }
+
+        .tableizer-table td:before {
+            display: block;
+            margin-bottom: 0.75em;
+            margin-left: 0;
+        }
+    }
+</style>
