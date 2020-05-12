@@ -1,0 +1,188 @@
+<!-- Google Optimize Anti Flicker, optional -->
+<style>
+    .async-hide {
+        opacity: 0 !important
+    }
+</style>
+<script>(function (a, s, y, n, c, h, i, d, e) {
+        s.className += ' ' + y; h.start = 1 * new Date;
+        h.end = i = function () { s.className = s.className.replace(RegExp(' ?' + y), '') };
+        (a[n] = a[n] || []).hide = h; setTimeout(function () { i(); h.end = null }, c); h.timeout = c;
+    })(window, document.documentElement, 'async-hide', 'dataLayer', 4000,
+        { 'GTM-PFL46LH': true });</script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1350365-39"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-1350365-39', { 'optimize_id': 'GTM-PFL46LH' });
+</script>
+
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/344141.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+
+<!-- Hotjar Tracking Code for https://mangolanguages.com/ -->
+<script>
+    (function (h, o, t, j, a, r) {
+        h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+        h._hjSettings = { hjid: 1417543, hjsv: 6 };
+        a = o.getElementsByTagName('head')[0];
+        r = o.createElement('script'); r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+</script>
+
+
+
+<!-- javascript to turn on tooltip bootstrap -->
+<script>
+    window.addEventListener('load', function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+
+
+
+<!-- javascript to open a new tab on target language page: resources -->
+<script>
+    window.onload = function () {
+        var anchors = document.getElementsByClassName('blacklink');
+        for (var i = 0; i < anchors.length; i++) {
+            anchors[i].setAttribute('target', '_blank');
+        }
+    }
+</script>
+
+
+
+<style>
+    /* header */
+    @media screen and (max-width: 992px) {
+        .main_header .container {
+            max-width: 100%;
+            padding-left: 4vw;
+            padding-right: 4vw;
+        }
+    }
+
+    /* Hubspot GDPR cookie */
+    div#hs-eu-cookie-confirmation {
+        top: auto !important;
+        bottom: 0 !important;
+    }
+</style>
+
+<script type='text/javascript'>
+    document.addEventListener('DOMContentLoaded', function (event) {
+        $('div#megamenus').appendTo('header');
+
+        $('li#nav-languages').hover(function () {
+            $('.megamenu--languages').addClass('active');
+        }, function () {
+            $('.megamenu--languages').removeClass('active');
+        });
+
+    });
+</script>
+
+<!-- Mega Menu CSS -->
+<style type="text/css">
+    .header_top {
+        display: none;
+    }
+
+    .grid-row {
+        display: grid;
+        grid-template-columns: [full-start] minmax(5%, 1fr) [main-start] minmax(0, 1200px) [main-end] minmax(5%, 1fr) [full-end];
+    }
+
+    .grid-row_inner {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .megamenu {
+        position: absolute;
+        left: 0;
+        top: 109px;
+        width: 100vw;
+        background: #fff;
+        box-shadow: 0 2rem 2rem rgba(0, 0, 0, .1);
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+        transition: opacity 300ms, visibility 300ms;
+        border-top: 1px solid #ccc;
+    }
+
+    .megamenu__inner {
+        grid-area: main;
+        grid-gap: 30px;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        display: grid;
+        padding: 2rem 15px;
+    }
+
+    .megamenu:before {
+        width: 100%;
+        position: absolute;
+        height: 3rem;
+        top: -3rem;
+        left: 0;
+        content: "";
+    }
+
+    .megamenu.active,
+    .megamenu:hover {
+        opacity: 1;
+        visibility: visible;
+        z-index: 1;
+        transition: opacity 300ms, visibility 300ms;
+    }
+
+    .megamenu ul {
+        min-width: 0;
+        margin-bottom: 1rem;
+    }
+
+    .megamenu ul:last-child {
+        margin: 0;
+    }
+
+    .megamenu ul li {
+        font-size: .9em;
+    }
+
+    .megamenu ul li:first-child {
+        font-weight: 600;
+        margin-bottom: .5em;
+    }
+
+    .megamenu ul li a {
+        color: #888;
+    }
+
+    .megamenu ul li a:hover {
+        color: #111;
+    }
+
+    .megamenu--languages ul.quicklinks {
+        list-style: none;
+        display: flex;
+        grid-area: main;
+        margin: 0 15px;
+        border-top: 1px solid #ccc;
+        padding: 1rem 0;
+    }
+
+    .megamenu--languages ul.quicklinks li {
+        margin-right: 2rem;
+    }
+</style>
