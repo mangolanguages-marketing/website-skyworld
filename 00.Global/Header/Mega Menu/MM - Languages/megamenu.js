@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function (event) {
     // $('div#megamenus').appendTo('header');
-
     var myStylesLocation = '/userfiles/files/css/megamenu/megamenu.css';
     $('<link rel="stylesheet" type="text/css" href="' + myStylesLocation + '" >').appendTo('head');
 
@@ -13,9 +12,9 @@ document.addEventListener('DOMContentLoaded', function (event) {
     }, function () {
         $('.megamenu--languages').removeClass('active');
     });
-
 });
 
+// Google Analytics Events on megamenu links
 window.addEventListener('load', function () {
     $('.megamenu--languages li a').each(function (index) {
         $(this).on("click", function () {
