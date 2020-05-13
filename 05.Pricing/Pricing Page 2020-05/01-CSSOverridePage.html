@@ -1,0 +1,166 @@
+<!-- bootstrap tooltip activate -->
+<script>
+    window.addEventListener('load', function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+
+
+<style>
+    /* Header Section */
+    .top_nine_banner {
+        background-image: none;
+        background: #FBFBFB !important;
+        height: auto;
+    }
+
+    .top_nine_banner .inner_banner_heading h1,
+    .top_nine_banner .inner_banner_heading p {
+        color: #272525;
+    }
+
+    .top_nine_banner .inner_banner_heading {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .top_nine_banner .inner_banner_heading p {
+        max-width: 850px;
+        margin: 0 auto;
+    }
+
+
+    section.inner_banner2 {
+        height: auto;
+    }
+
+    .top_nine_banner .row {
+        height: auto;
+        padding: 50px 0px;
+    }
+
+
+    /* remove institution beige cta section */
+    .institution {
+        display: none;
+    }
+
+    .pricing_panel .col-lg-4:first-of-type .price_box {
+        border-color: #1d98d5;
+    }
+
+    .pricing_panel .row .col-lg-4:last-child .price_listing {
+        border-bottom: none;
+    }
+
+
+
+
+    /* remove old pricing section */
+    .pricing_panel {
+        display: none !important;
+    }
+
+
+
+
+
+
+    /* customer and find mango - align columns */
+    section.Customer .container .row>div {
+        align-self: flex-start !important;
+    }
+
+    section.Customer .container .row>div p {
+        min-height: 100px;
+    }
+</style>
+
+
+
+
+
+
+
+<div id="bannerNotification" class="bannerNotification banner_top_part ">
+    <div class="container relative">
+        <section>
+            <a href="https://mangolanguages.com/find-mango/">Get Mango Languages, an online language-learning resource
+                freely available through participating local libraries.</a>
+        </section>
+        <a class="close_banner_top" href="#"><img src="/images/close.svg" alt="Close"></a>
+    </div>
+</div>
+
+<style type="text/css">
+    /* header to white color to overlap banner fade */
+    header.main_header {
+        background: white;
+    }
+
+    section.top_nine_banner {
+        padding-top: 54px;
+    }
+
+    /* BannerNotification styling with show action */
+    .bannerNotification {
+        background: #00A9E0;
+        display: block;
+    }
+
+    .bannerNotification>.container>section {
+        text-align: center;
+        max-width: calc(100% - 40px);
+    }
+
+    .banner_top_part {
+        padding: 1rem 0;
+        font-size: 1.25em;
+    }
+
+    .banner_top_part a {
+        color: inherit;
+    }
+
+    .banner_top_part a:hover {
+        color: inherit;
+        text-decoration: underline;
+    }
+
+    .bannerNotifcation--show {
+        animation-delay: 0s;
+        animation-direction: normal;
+        display: block;
+        animation: fade-banner-in 3s ease;
+    }
+
+    .switch_field_wrap_popup {
+        display: none !important;
+    }
+
+    /* keyframe to fade banner in */
+    @keyframes fade-banner-in {
+        0% {
+            opacity: 0;
+            transform: translate(0px, -150px);
+        }
+
+        66% {
+            opacity: 0;
+            transform: translate(0px, -150px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translate(0px, 0px);
+        }
+    }
+</style>
+
+
+<script type='text/javascript'>
+    document.addEventListener('DOMContentLoaded', function (event) {
+        $('#bannerNotification').insertBefore('section.top_nine_banner .container');
+        $('#bannerNotification').addClass("bannerNotifcation--show");
+    });
+</script>
