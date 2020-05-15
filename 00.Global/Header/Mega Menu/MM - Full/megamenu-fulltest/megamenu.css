@@ -136,19 +136,19 @@
   color: #333;
 }
 
-.megamenu--organizations a {
+.megamenu--organizations a, .megamenu--resources a {
   color: #333;
 }
 
-.megamenu--organizations a:hover {
+.megamenu--organizations a:hover, .megamenu--resources a:hover {
   color: #111;
 }
 
-.megamenu--organizations h5 {
+.megamenu--organizations h5, .megamenu--resources h5 {
   font-size: 1em;
 }
 
-.megamenu--organizations .megamenu__inner {
+.megamenu--organizations .megamenu__inner, .megamenu--resources .megamenu__inner {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 2fr;
@@ -156,14 +156,15 @@
   grid-gap: 30px;
 }
 
-.megamenu--organizations .megamenu__inner > div:nth-child(2) {
-  -webkit-column-count: 2;
-          column-count: 2;
-  -webkit-column-gap: 30px;
-          column-gap: 30px;
+.megamenu--organizations .megamenu__inner > div:nth-child(2), .megamenu--resources .megamenu__inner > div:nth-child(2) {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
 }
 
-.megamenu--organizations .megamenu__inner > div:nth-child(2) a {
+.megamenu--organizations .megamenu__inner > div:nth-child(2) a, .megamenu--resources .megamenu__inner > div:nth-child(2) a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,20 +172,18 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-column-break-inside: avoid;
-          break-inside: avoid;
 }
 
-.megamenu--organizations .megamenu__inner > div:nth-child(2) a img {
-  width: 15%;
+.megamenu--organizations .megamenu__inner > div:nth-child(2) a img, .megamenu--resources .megamenu__inner > div:nth-child(2) a img {
+  width: 4rem;
 }
 
-.megamenu--organizations .megamenu__inner > div:nth-child(2) a div {
-  width: 85%;
+.megamenu--organizations .megamenu__inner > div:nth-child(2) a div, .megamenu--resources .megamenu__inner > div:nth-child(2) a div {
   padding-left: 1rem;
 }
 
-.megamenu--organizations .megamenu__inner > div:nth-child(2) a div p {
-  font-size: 0.85em;
+.megamenu--organizations .megamenu__inner > div:nth-child(2) a div p, .megamenu--resources .megamenu__inner > div:nth-child(2) a div p {
+  font-size: 0.8em;
+  line-height: normal;
 }
 /*# sourceMappingURL=megamenu.css.map */

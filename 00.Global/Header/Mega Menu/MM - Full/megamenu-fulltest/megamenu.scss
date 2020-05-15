@@ -118,7 +118,7 @@
     }
   }
 }
-.megamenu--organizations {
+.megamenu--organizations, .megamenu--resources {
   a {
     color: #333;
 
@@ -137,25 +137,24 @@
     > div:nth-child(1) {
     }
     > div:nth-child(2) {
-      column-count: 2;
-      column-gap: 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
 
       a {
         display: flex;
         width: 100%;
-        // margin-bottom: 2rem;
         align-items: flex-start;
-        break-inside: avoid;
 
         img {
-          width: 15%;
+          width: 4rem;
         }
         div {
-          width: 85%;
           padding-left: 1rem;
 
           p {
-            font-size: 0.85em;
+            font-size: 0.8em;
+            line-height: normal;
           }
         }
       }
