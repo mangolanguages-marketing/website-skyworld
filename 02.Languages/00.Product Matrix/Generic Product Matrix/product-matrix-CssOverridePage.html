@@ -3,7 +3,7 @@
         $('.privacy_team_tab > .row > div').first().removeClass().addClass('col-12');
         $('.privacy_team_tab > .row > div').last().removeClass('col-lg-9 col-md-8');
         $('.top_nine_banner').remove();
-        $( ".specialty td:first-child" ).prepend( "<span>+</span>" );
+        $(".specialty td:first-child").prepend("<span>+</span>");
         $('.tableizer-table td:nth-of-type(1)').attr('data-label', 'Course Name');
         $('.tableizer-table td:nth-of-type(2)').attr('data-label', 'Units');
         $('.tableizer-table td:nth-of-type(3)').attr('data-label', 'Chapters');
@@ -15,38 +15,50 @@
     });
 </script>
 <style type="text/css">
-
     html {
         overflow-y: scroll;
     }
+
     .header_top {
-        display:none;
+        display: none;
     }
 
     table.tableizer-table {
         border-collapse: collapse;
         width: 100%;
         line-height: normal;
+        border-bottom: 1px solid #333;
     }
-    table tr.specialty td {
-        
+
+    table.tableizer-table tr {
+        border-width: 1px 0 0;
+        border-style: solid;
+        border-color: #333;
     }
+
+    table tr.specialty {
+        border-style: dashed;
+    }
+
     table tr.specialty td:first-child {
-        font-style:italic;
+        font-style: italic;
         padding-left: 1rem;
-        font-size:.95em;
+        font-size: .95em;
         position: relative;
     }
+
     table tr.specialty td:first-child span {
-        font-style:normal;
-        margin-right:.25em;
-        font-weight:bold;
+        font-style: normal;
+        margin-right: .25em;
+        font-weight: bold;
     }
 
     .tableizer-table td {
         padding: 4px;
         margin: 3px;
-        border: 1px solid #333;
+        border-width: 0 1px;
+        border-style: solid;
+        border-color: #333;
     }
 
     .tableizer-table td:nth-child(1) {
@@ -67,8 +79,9 @@
         .container {
             max-width: 100%;
         }
+
         .privacy_team_tab_panel {
-            padding-top:7rem;
+            padding-top: 7rem;
         }
     }
 
@@ -123,8 +136,9 @@
             width: 100%;
             color: #333;
         }
+
         .tableizer-table td:first-child:before {
-            display:none;
+            display: none;
         }
     }
 
