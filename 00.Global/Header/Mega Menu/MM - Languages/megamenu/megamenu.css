@@ -23,6 +23,7 @@
   -webkit-transition: opacity 300ms, visibility 300ms;
   transition: opacity 300ms, visibility 300ms;
   border-top: 1px solid #ccc;
+  pointer-events: none;
 }
 
 .megamenu:before {
@@ -40,6 +41,7 @@
   z-index: 1;
   -webkit-transition: opacity 300ms, visibility 300ms;
   transition: opacity 300ms, visibility 300ms;
+  pointer-events: all;
 }
 
 .megamenu .megamenu__inner {

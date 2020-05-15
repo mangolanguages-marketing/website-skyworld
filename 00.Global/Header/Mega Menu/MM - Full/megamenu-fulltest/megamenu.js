@@ -1,9 +1,8 @@
 document.addEventListener('DOMContentLoaded', function (event) {
-    // $('div#megamenus').appendTo('header');
-    var myStylesLocation = '/userfiles/files/css/megamenu/megamenu.css';
+    var myStylesLocation = '/userfiles/files/css/megamenu-fulltest/megamenu.css';
     $('<link rel="stylesheet" type="text/css" href="' + myStylesLocation + '" >').appendTo('head');
 
-    $.get('/userfiles/files/css/megamenu/megamenu.html', function (data) {
+    $.get('/userfiles/files/css/megamenu-fulltest/megamenu.html', function (data) {
         $('header').append(data);
     });
 
@@ -12,6 +11,19 @@ document.addEventListener('DOMContentLoaded', function (event) {
     }, function () {
         $('.megamenu--languages').removeClass('active');
     });
+
+    $('li#nav-organizations').hover(function () {
+        $('.megamenu--organizations').addClass('active');
+    }, function () {
+        $('.megamenu--organizations').removeClass('active');
+    });
+
+    $('li#nav-resources').hover(function () {
+        $('.megamenu--resources').addClass('active');
+    }, function () {
+        $('.megamenu--resources').removeClass('active');
+    });
+
 });
 
 // Google Analytics Events on megamenu links

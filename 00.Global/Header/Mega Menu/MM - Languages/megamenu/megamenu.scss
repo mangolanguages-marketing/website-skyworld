@@ -21,6 +21,7 @@
   z-index: -1;
   transition: opacity 300ms, visibility 300ms;
   border-top: 1px solid #ccc;
+  pointer-events: none;
 
   &:before {
     width: 100%;
@@ -37,6 +38,7 @@
     visibility: visible;
     z-index: 1;
     transition: opacity 300ms, visibility 300ms;
+    pointer-events: all;
   }
   .megamenu__inner {
     grid-area: main;
