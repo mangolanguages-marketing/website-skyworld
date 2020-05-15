@@ -1,0 +1,118 @@
+.header_top {
+  display: none;
+}
+
+.grid-row {
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(5%, 1fr) [main-start] minmax(0, 1200px)
+    [main-end] minmax(5%, 1fr) [full-end];
+}
+
+.megamenu {
+  position: absolute;
+  left: 0;
+  top: 109px;
+  width: 100vw;
+  background: #fff;
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+  transition: opacity 300ms, visibility 300ms;
+  border-top: 1px solid #ccc;
+
+  &:before {
+    width: 100%;
+    position: absolute;
+    height: 3rem;
+    top: -3rem;
+    left: 0;
+    content: "";
+  }
+
+  &.active,
+  &:hover {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+    transition: opacity 300ms, visibility 300ms;
+  }
+  .megamenu__inner {
+    grid-area: main;
+    padding: 2rem 15px 1rem;
+  }
+}
+
+.megamenu--languages {
+  a {
+    color: #666;
+
+    &:hover {
+      color: #111;
+    }
+  }
+  .megamenu__inner {
+    column-count: 6;
+    column-gap: 30px;
+    > ul {
+      min-width: 0;
+      margin-bottom: 1rem;
+      display: inline-block;
+      width: 100%;
+
+      &:last-child {
+        margin: 0;
+      }
+      > li {
+        font-size: 0.9em;
+        margin-bottom: 0.1rem;
+
+        &:first-child {
+          font-weight: 600;
+          border: 1px solid #666;
+          display: flex;
+          width: 1.5rem;
+          height: 1.5rem;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          line-height: 1em;
+        }
+      }
+      ul.specialty {
+        font-size: 0.9em;
+
+        li {
+          position: relative;
+          padding-left: 0.75rem;
+          font-style: italic;
+
+          &:before {
+            content: "+";
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-style: normal;
+          }
+        }
+      }
+    }
+  }
+  ul.quicklinks {
+    list-style: none;
+    display: flex;
+    grid-area: main;
+    margin: 0 15px;
+    border-top: 1px solid #ccc;
+    padding: 1rem 0;
+
+    li {
+      margin-right: 2rem;
+      a {
+        color: #333;
+      }
+    }
+  }
+}
