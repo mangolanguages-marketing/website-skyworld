@@ -1,0 +1,55 @@
+<style type="text/css">
+.inner_banner_heading {
+	max-width:none;
+}
+.corp-form {
+    transform: translate(0, -10rem);
+}
+
+.corp-form .form {
+    padding: 2rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .25);
+    background: #fff;
+}
+
+.corp-form .disclaimer {
+    font-size: 85%;
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+.hbspt-form .hs-button {
+    letter-spacing: normal;
+}
+.event_wrok {
+	margin:2rem 0 0 0;
+}
+
+@media (max-width: 990px) {
+    .corp-form {
+        transform: none;
+        padding: 3vw;
+        border: 1px solid #ccc;
+        border-radius: .5rem;
+        margin: 1rem 0;
+    }
+
+    .corp-form .form {
+        padding: 0;
+        box-shadow: none;
+        background:none;
+    }
+
+    .privacy_team_tab_panel .hbspt-form,
+    .small-form .hbspt-form {
+        max-width: none;
+    }
+}
+</style>
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function(event) {
+    $('.privacy_team_tab > .row > div').first().remove();
+    $('.privacy_team_tab > .row > div:last-child').removeClass().addClass('col-sm-12 col-12');
+    // alert('HI DONNY');
+});
+</script>

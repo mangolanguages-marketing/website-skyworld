@@ -1,0 +1,9 @@
+.tablnk a {
+  font-weight: 600;
+}
+@media screen and (max-width: 991px) {
+  .nav-tabs .nav-link img {
+    width: 2rem;
+    height: auto;
+  }
+}

@@ -49,3 +49,17 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+#images
+*.jpg
+*.png
+*.bmp
+*.svg
+*.pdf
+*.eps
+*.psd
+*.ai
+
+#google docs
+*.gdoc
+*.gsheet

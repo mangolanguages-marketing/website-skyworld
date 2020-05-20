@@ -1,0 +1,742 @@
+<!-- style for new pricing -->
+<style>
+  /* ### Find Mango Banner ### */
+  .clearAll {
+    margin: 0px !important;
+  }
+
+  .find-mango-banner {
+    width: 100%;
+    background: white;
+    border: 1px solid #D9D9D6;
+    border-left: none;
+    border-right: none;
+    color: white;
+    margin: 0 auto 60px auto;
+    padding: 0px;
+  }
+
+  .find-mango-banner div {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .find-mango-banner p {
+    margin: 0px;
+    color: black;
+    font-size: 16px;
+    line-height: 1.4em;
+  }
+
+  .find-mango-banner a {
+    color: black;
+    margin: 0px;
+    padding: 22px;
+  }
+
+  .find-mango-banner a span {
+    text-decoration: underline;
+  }
+
+  .find-mango-banner a img {
+    width: 10px;
+    height: 17px;
+    margin: 0px 10px 0px 0px;
+    text-decoration: none;
+  }
+
+  .find-mango-banner a img:last-of-type {
+    width: 9px;
+    height: 11px;
+    margin: 0px 5px;
+  }
+
+
+  /* ### new pricing compare table ### */
+
+  /* new shadow box target */
+  .subscribe_type_inner {
+    box-shadow: none;
+  }
+
+  .subscribe_type_panel>.container .table-shadow {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.08);
+    width: 75%;
+    z-index: 2;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  .subscribe_type_item h3 {
+    background: rgba(0, 0, 0, .05);
+  }
+
+  .subscribe_type_item h3:after {
+    display: none;
+  }
+
+  @media screen and (max-width: 991px) {
+    .subscribe_type_panel>.container {
+      max-width: 100%;
+      padding-left: 1.5vw;
+      padding-right: 1.5vw;
+    }
+  }
+
+  /* white box to cover shadow of top left */
+  .subscribe_type_item_select.subscribe_type_item ul:last-child li:first-child:before,
+  .subscribe_type_item ul:first-child li:after {
+    /* height: 30px; */
+    display: none;
+  }
+
+  .subscribe_price_type {
+    align-self: flex-start;
+  }
+
+  .subscribe_price_type h4,
+  .subscribe_price_type h4 span {
+    margin-bottom: 10px;
+  }
+
+  /* toggle switch */
+  .switch-field input:checked+label {
+    border-color: white;
+  }
+
+  /* tooltip */
+  .tooltip-i {
+    position: absolute;
+    right: 20px;
+    z-index: 50;
+    padding: 10px 2px;
+  }
+  .tooltip.show{
+    opacity: 1;
+  }
+  .tooltip > .tooltip-inner{
+    z-index: 60;
+    font-family: "proxima-nova";
+    min-width: 320px;
+    font-size: 14px;
+    line-height: 1.3em;
+    background: white;
+    color: #1c1c1c;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  .tooltip > .arrow::before{
+    z-index: 60;
+    border-right: 5px solid white;
+  }
+
+  /* broken feature checkmarks on desktop, hide */
+  .subscribe_type_item ul:last-child li:first-child:before {
+    height: 0px;
+  }
+
+  /* FAQ */
+  .how_borderPricing .how_accordion, .how_borderPricing .how_accordion_panel{
+    line-height: 1.4em !important;
+  }
+  .how_accordion_panel ul{
+    list-style: disc;
+    margin-left: 20px;
+  }
+  .how_accordion_panel ul{
+    list-style: disc;
+    margin-left: 20px;
+  }
+  .how_accordion_panel ul li{
+    margin-bottom: 10px;
+  }
+
+  /* ### MOBILE ### */
+  @media screen and (max-width: 767px) {
+
+    /* checkmarks first on mobile, broken on desktop */
+    .subscribe_type_item ul:last-child li:first-child:before {
+      content: "";
+      background: url(../images/tick_active.svg) no-repeat;
+      background-size: 100%;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      width: 15px;
+      height: 13px;
+      position: absolute;
+      left: 10px;
+    }
+    
+    /* FAQ */
+    .how_borderPricing .how_accordion, .how_borderPricing .how_accordion_panel{
+      padding-right: 40px;
+    }
+    .accordion:after, .how_accordion:after{
+      right: -27px !important;
+      position: relative !important;
+    }
+
+  }
+  
+</style>
+
+<!-- top banner for Free Find Mango -->
+<section class="find-mango-banner">
+  <div>
+    <a href="/find-mango/"><img src="/userfiles/Images/icons/blue-location-vector.png" /><span>Find Mango for
+        free</span> at your local library.
+      <img src="/userfiles/Images/icons/right-caret.png" />
+    </a>
+  </div>
+</section>
+
+
+
+
+<section class="subscribe_type_panel">
+  <div class="container">
+
+    <div class="subscribe_type_inner relative">
+      <div class="table-shadow"></div>
+      <div class="subscribe_type_item subscribe_type_item_select">
+        <ul>
+          <li class="align-self-end">
+            <div class="switch_field_wrap relative"><span>Billed</span>
+              <div class="switch-field relative"><input checked="checked" id="radio-one" name="switch-one" onclick="
+                                      document.getElementById('monthly1title').style.display='block';
+                                      document.getElementById('monthly1desc').style.display='block';
+                                      document.getElementById('monthly2title').style.display='block';
+                                      document.getElementById('monthly2desc').style.display='block';
+                                      document.getElementById('yearly1title').style.display='none';
+                                      document.getElementById('yearly1desc').style.display='none';
+                                      document.getElementById('yearly2title').style.display='none';
+                                      document.getElementById('yearly2desc').style.display='none';
+                                      document.getElementById('switch_field_wrap_popup').style.display='block';
+                                      " type="radio" value="yes" /> <label for="radio-one">Monthly</label> <input
+                  id="radio-two" name="switch-one" onclick="
+                                      document.getElementById('monthly1title').style.display='none';
+                                      document.getElementById('monthly1desc').style.display='none';
+                                      document.getElementById('monthly2title').style.display='none';
+                                      document.getElementById('monthly2desc').style.display='none';
+                                      document.getElementById('yearly1title').style.display='block';
+                                      document.getElementById('yearly1desc').style.display='block';
+                                      document.getElementById('yearly2title').style.display='block';
+                                      document.getElementById('yearly2desc').style.display='block';
+                                      document.getElementById('switch_field_wrap_popup').style.display='none';
+                                      " type="radio" value="no" /> <label for="radio-two">Yearly</label>
+                <div id="switch_field_wrap_popup" class="switch_field_wrap_popup">
+                  <p class="mb-0">Get <strong>2 months free</strong> by subscribing annually!</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="subscribe_price_type">
+              <h2>Single Language</h2>
+
+              <h4 id="monthly1title">$7.99<span>USD / Month</span></h4>
+              <h4 id="yearly1title" style="display:none">$6.67<span>USD / Month</span></h4>
+
+              <p id="monthly1desc">Your account will be charged on a monthly basis.</p>
+              <p id="yearly1desc" style="display:none">Your account will be charged $79.99 every 12 months.</p>
+
+              <a class="all_btn" href="https://learn.mangolanguages.com/welcome">Get Started</a>
+
+            </div>
+          </li>
+          <li>
+            <div class="subscribe_price_type">
+              <h2>All Languages</h2>
+
+              <h4 id="monthly2title">$17.99<span>USD / Month</span></h4>
+              <h4 id="yearly2title" style="display:none">$14.99<span>USD / Month</span></h4>
+
+              <p id="monthly2desc">Your account will be charged on a monthly basis.</p>
+              <p id="yearly2desc" style="display:none">Your account will be charged $179.99 every 12 months.</p>
+
+              <a class="all_btn" href="https://learn.mangolanguages.com/welcome">Get Started</a>
+
+            </div>
+          </li>
+          <li>
+            <div class="subscribe_price_type">
+              <h2>Enterprise</h2>
+
+              <h4>Custom</h4>
+              <!-- <h6>USD / Month</h6> -->
+
+              <p>Mango offers features and pricing suited to your organization’s size and budget. Contact us today.</p>
+              <a class="all_btn" href="https://mangolanguages.com/company/institution-pricing.cfm">Contact Sales</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="subscribe_type_item">
+        <h3><span>Language Learning Courses</span></h3>
+
+        <div class="subscribe_type_item_inner">
+          <ul>
+            <li>Premium language courses
+              <img class="tooltip-i"
+                data-original-title="Choose from over 70 premium language courses — access based on your pricing plan."
+                data-placement="right" data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+            <li>Access to a single (1) language</li>
+            <li>Unlimited access to all 72 languages</li>
+            <li>Unlimited access to all 72 languages</li>
+          </ul>
+
+          <ul>
+            <li>Endangered language courses
+              <img class="tooltip-i"
+                data-original-title="Cherokee, Dzongkha, Greek (Ancient), Irish (Standard) + St. Patrick's Day, Scottish Gaelic, Tuvan, Yiddish, Hawaiian, Chaldean Aramaic"
+                data-placement="right" data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+            <li><img alt="" src="/images/tick_active.svg" /></li>
+            <li><img alt="" src="/images/tick_active.svg" /></li>
+            <li><img alt="" src="/images/tick_active.svg" /></li>
+          </ul>
+
+          <ul>
+            <li>Bonus language courses
+              <img class="tooltip-i" data-original-title="Pirate, Shakespearean" data-placement="right"
+                data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+            <li><img alt="" src="/images/tick_active.svg" /></li>
+            <li><img alt="" src="/images/tick_active.svg" /></li>
+            <li><img alt="" src="/images/tick_active.svg" /></li>
+          </ul>
+          <ul>
+            <li>Assessment and placement tests
+              <img class="tooltip-i" data-original-title="Only available for select courses." data-placement="right"
+                data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+            <li><img alt="" src="/images/tick_active.svg" /></li>
+            <li><img alt="" src="/images/tick_active.svg" /></li>
+            <li><img alt="" src="/images/tick_active.svg" /></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="subscribe_type_item">
+        <h3><span>Additional Learning Tools</span></h3>
+
+        <div class="subscribe_type_item_inner">
+          <ul>
+            <li>Mango Movies
+              <img class="tooltip-i"
+                data-original-title="A selection of world films provide a breakdown of each line of dialogue and apply the same learning cues as the language courses."
+                data-placement="right" data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+            <li><img alt="" src="/images/tick_active.svg" /></li>
+            <li><img alt="" src="/images/tick_active.svg" /></li>
+            <li><img alt="" src="/images/tick_active.svg" /></li>
+          </ul>
+
+          <ul>
+            <li>Mango Reader
+              <img class="tooltip-i"
+                data-original-title="A Chrome browser extension that turns online content into a learning opportunity."
+                data-placement="right" data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+            <li><img alt="" src="/images/tick_active.svg" /></li>
+            <li><img alt="" src="/images/tick_active.svg" /></li>
+            <li><img alt="" src="/images/tick_active.svg" /></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="subscribe_type_item">
+        <h3><span>Support Features</span></h3>
+
+        <div class="subscribe_type_item_inner">
+          <ul>
+            <li>Customer support
+              <img class="tooltip-i"
+                data-original-title="Real-life humans are on stand-by to answer questions, troubleshoot, and collect feedback."
+                data-placement="right" data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+            <li><img alt="" src="/images/tick_active.svg" /></li>
+            <li><img alt="" src="/images/tick_active.svg" /></li>
+            <li><img alt="" src="/images/tick_active.svg" /></li>
+          </ul>
+
+          <ul>
+            <li>Progress tracking
+              <img class="tooltip-i"
+                data-original-title="Each individual profile tracks users’ progress and records their successes, personalizing the language-learning journey."
+                data-placement="right" data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+            <li><img alt="" src="/images/tick_active.svg" /></li>
+            <li><img alt="" src="/images/tick_active.svg" /></li>
+            <li><img alt="" src="/images/tick_active.svg" /></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="subscribe_type_item">
+        <h3><span>Additional Users</span></h3>
+
+        <div class="subscribe_type_item_inner">
+          <ul>
+            <li>Family Profiles (up to 5)
+              <img class="tooltip-i"
+                data-original-title="Learners can add up to five usernames and track progress separately for each sub-profile."
+                data-placement="right" data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+            <li>&nbsp;</li>
+            <li><img alt="" src="/images/tick_active.svg" /></li>
+            <li><img alt="" src="/images/tick_active.svg" /></li>
+          </ul>
+
+          <ul>
+            <li>Parental controls
+              <img class="tooltip-i"
+                data-original-title="The ability to add content classifications to child profiles, blocking access to certain content."
+                data-placement="right" data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+            <li>&nbsp;</li>
+            <li><img alt="" src="/images/tick_active.svg" /></li>
+            <li><img alt="" src="/images/tick_active.svg" /></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="subscribe_type_item">
+        <h3><span>Organizational Features</span></h3>
+
+        <div class="subscribe_type_item_inner">
+          <ul>
+            <li>Dedicated Account Manager
+              <img class="tooltip-i"
+                data-original-title="Set up secure user profiles and sign-in options for members of your organization."
+                data-placement="right" data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+            <li>&nbsp;</li>
+            <li>&nbsp;</li>
+            <li><img alt="" src="/images/tick_active.svg" /></li>
+          </ul>
+
+          <ul>
+            <li>Enterprise authentication support
+            </li>
+            <li>&nbsp;</li>
+            <li>&nbsp;</li>
+            <li><img alt="" src="/images/tick_active.svg" /></li>
+          </ul>
+
+          <ul>
+            <li>Marketing and promotional tools
+            </li>
+            <li>&nbsp;</li>
+            <li>&nbsp;</li>
+            <li><img alt="" src="/images/tick_active.svg" /></li>
+          </ul>
+
+          <ul>
+            <li>In-depth usage stats
+            </li>
+            <li>&nbsp;</li>
+            <li>&nbsp;</li>
+            <li><img alt="" src="/images/tick_active.svg" /></li>
+          </ul>
+
+          <ul>
+            <li>Classroom management tools
+            </li>
+            <li>&nbsp;</li>
+            <li>&nbsp;</li>
+            <li><img alt="" src="/images/tick_active.svg" /></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="subscribe_type_panel_mobile">
+  <div class="container">
+    <div class="subscribe_price_type_wrap">
+      <div class="subscribe_price_type">
+        <h2>Single Language</h2>
+
+        <h4>$7.99<span>USD / Month</span></h4>
+
+        <p>Or get 2 months free by subscribing for $79.99 USD/YEAR</p>
+        <a class="all_btn" href="#">Get Started</a>
+      </div>
+
+      <div class="subscribe_type_item">
+        <h3>Language Learning Courses</h3>
+
+        <div class="subscribe_type_item_inner">
+          <ul>
+            <li>Access to a single (1) language
+              <img class="tooltip-i"
+                data-original-title="Choose from over 70 premium language courses — access based on your pricing plan."
+                data-placement="right" data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+            <li>Endangered language courses
+              <img class="tooltip-i"
+                data-original-title="Cherokee, Dzongkha, Greek (Ancient), Irish (Standard) + St. Patrick's Day, Scottish Gaelic, Tuvan, Yiddish, Hawaiian, Chaldean Aramaic"
+                data-placement="right" data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+            <li>Bonus language courses
+              <img class="tooltip-i" data-original-title="Pirate, Shakespearean" data-placement="right"
+                data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+            <li>Assessment and placement tests
+              <img class="tooltip-i" data-original-title="Available in select languages." data-placement="right"
+                data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="subscribe_type_item">
+        <h3>Additional Learning Tools</h3>
+
+        <div class="subscribe_type_item_inner">
+          <ul>
+            <li>Mango Movies
+              <img class="tooltip-i"
+                data-original-title="A selection of world films provide a breakdown of each line of dialogue and apply the same learning cues as the language courses."
+                data-placement="right" data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+            <li>Mango Reader
+              <img class="tooltip-i"
+                data-original-title="A Chrome browser extension that turns online content into a learning opportunity."
+                data-placement="right" data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="subscribe_type_item">
+        <h3>Support Features</h3>
+
+        <div class="subscribe_type_item_inner">
+          <ul>
+            <li>Customer Support
+              <img class="tooltip-i"
+                data-original-title="Real-life humans are on stand-by to answer questions, troubleshoot, and collect feedback."
+                data-placement="right" data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+            <li>Progress Tracking
+              <img class="tooltip-i"
+                data-original-title="Each individual profile tracks users’ progress and records their successes, personalizing the language-learning journey."
+                data-placement="right" data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="subscribe_price_type_wrap">
+      <div class="subscribe_price_type">
+        <h2>All Language</h2>
+
+        <h4>$17.99<span>USD / Month</span></h4>
+
+        <p>Or get 2 months free by subscribing annually for $179.99 USD/YEAR</p>
+        <a class="all_btn" href="#">Get Started</a>
+      </div>
+
+      <div class="subscribe_type_item">
+        <h3>Language Learning Courses</h3>
+
+        <div class="subscribe_type_item_inner">
+          <ul>
+            <li>Unlimited Access to all 72 languages
+              <img class="tooltip-i"
+                data-original-title="Choose from over 70 premium language courses — access based on your pricing plan."
+                data-placement="right" data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+            <li>Endangered language courses
+              <img class="tooltip-i"
+                data-original-title="Cherokee, Dzongkha, Greek (Ancient), Irish (Standard) + St. Patrick's Day, Scottish Gaelic, Tuvan, Yiddish, Hawaiian, Chaldean Aramaic"
+                data-placement="right" data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+            <li>Bonus language courses
+              <img class="tooltip-i" data-original-title="Pirate, Shakespearean" data-placement="right"
+                data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+            <li>Assessment and placement tests
+              <img class="tooltip-i" data-original-title="Available in select languages." data-placement="right"
+                data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="subscribe_type_item">
+        <h3>Additional Learning Tools</h3>
+
+        <div class="subscribe_type_item_inner">
+          <ul>
+            <li>Mango Movies
+              <img class="tooltip-i"
+                data-original-title="A selection of world films provide a breakdown of each line of dialogue and apply the same learning cues as the language courses."
+                data-placement="right" data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+            <li>Mango Reader
+              <img class="tooltip-i"
+                data-original-title="A Chrome browser extension that turns online content into a learning opportunity."
+                data-placement="right" data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="subscribe_type_item">
+        <h3>Support Features</h3>
+
+        <div class="subscribe_type_item_inner">
+          <ul>
+            <li>Customer Support
+              <img class="tooltip-i"
+                data-original-title="Real-life humans are on stand-by to answer questions, troubleshoot, and collect feedback."
+                data-placement="right" data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+            <li>Progress Tracking
+              <img class="tooltip-i"
+                data-original-title="Each individual profile tracks users’ progress and records their successes, personalizing the language-learning journey."
+                data-placement="right" data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="subscribe_type_item">
+        <h3>Additional Users</h3>
+
+        <div class="subscribe_type_item_inner">
+          <ul>
+            <li>Family Profiles (UP to 5)
+              <img class="tooltip-i"
+                data-original-title="Learners can add up to five usernames and track progress separately for each sub-profile."
+                data-placement="right" data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+            <li>Parental Controls
+              <img class="tooltip-i"
+                data-original-title="The ability to add content classifications to child profiles, blocking access to certain content."
+                data-placement="right" data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="subscribe_price_type_wrap">
+      <div class="subscribe_price_type">
+        <h2>Enterprise</h2>
+
+        <h4>Custom</h4>
+
+        <p>Mango offers features and pricing suited to your organization’s size and budget. Contact us today.</p>
+        <a class="all_btn" href="#">Contact Sales</a>
+      </div>
+
+      <div class="subscribe_type_item">
+        <h3>Language Learning Courses</h3>
+
+        <div class="subscribe_type_item_inner">
+          <ul>
+            <li>Unlimited Access to all 72 languages
+              <img class="tooltip-i"
+                data-original-title="Choose from over 70 premium language courses — access based on your pricing plan."
+                data-placement="right" data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+            <li>Endangered language courses
+              <img class="tooltip-i"
+                data-original-title="Cherokee, Dzongkha, Greek (Ancient), Irish (Standard) + St. Patrick's Day, Scottish Gaelic, Tuvan, Yiddish, Hawaiian, Chaldean Aramaic"
+                data-placement="right" data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+            <li>Bonus Language Courses
+              <img class="tooltip-i" data-original-title="Pirate, Shakespearean" data-placement="right"
+                data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+            <li>Assessment and placement tests
+              <img class="tooltip-i" data-original-title="Available in select languages." data-placement="right"
+                data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="subscribe_type_item">
+        <h3>Additional Learning Tools</h3>
+
+        <div class="subscribe_type_item_inner">
+          <ul>
+            <li>Mango Movies
+              <img class="tooltip-i"
+                data-original-title="A selection of world films provide a breakdown of each line of dialogue and apply the same learning cues as the language courses."
+                data-placement="right" data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+            <li>Mango Reader
+              <img class="tooltip-i"
+                data-original-title="A Chrome browser extension that turns online content into a learning opportunity."
+                data-placement="right" data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="subscribe_type_item">
+        <h3>Support Features</h3>
+
+        <div class="subscribe_type_item_inner">
+          <ul>
+            <li>Customer Support
+              <img class="tooltip-i"
+                data-original-title="Real-life humans are on stand-by to answer questions, troubleshoot, and collect feedback."
+                data-placement="right" data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+            <li>Progress Tracking
+              <img class="tooltip-i"
+                data-original-title="Each individual profile tracks users’ progress and records their successes, personalizing the language-learning journey."
+                data-placement="right" data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="subscribe_type_item">
+        <h3>Organizational Features</h3>
+
+        <div class="subscribe_type_item_inner">
+          <ul>
+            <li>Dedicated Account Manager
+            </li>
+            <li>Enterprise Authentication Support
+              <img class="tooltip-i"
+                data-original-title="Set up secure user profiles and sign-in options for members of your organization."
+                data-placement="right" data-toggle="tooltip" src="/userfiles/images/icons/icon-info-03.svg" title="" />
+            </li>
+            <li>Marketing &amp; Promotional Tools
+
+            </li>
+            <li>In-depth Usage Stats
+
+            </li>
+
+            <li>Classroom Management
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

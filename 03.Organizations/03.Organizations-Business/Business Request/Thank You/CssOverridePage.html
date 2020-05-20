@@ -1,0 +1,204 @@
+<style type='text/css'>
+h1.bannerHeader {
+    line-height: 1em;
+}
+
+p.intro {
+    font-size: 1.65em;
+    margin-bottom: 2rem;
+    line-height: normal;
+}
+
+.corp-form {
+    /*transform: translate(0, -4rem);*/
+    padding: 2vw;
+    border: 1px solid #ccc;
+    border-radius: .25rem;
+    margin: 1rem 0;
+}
+
+.corp-form .form {}
+
+.corp-form .disclaimer {
+    font-size: 85%;
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+.hbspt-form .hs-button {
+    letter-spacing: normal;
+}
+
+/*feature row*/
+.corp-features>li {
+    margin-bottom: 2rem;
+}
+
+/*/icon + list*/
+.corp-features li>div {
+    display: flex;
+    align-items:center;
+}
+
+/*icon*/
+.corp-features li>div>div {
+    border: 2px solid #000;
+    border-radius: 50%;
+    margin-right: 1rem;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    flex: 0 0 80px;
+}
+
+/*list*/
+.corp-features li>div>ul {
+    list-style: disc;
+    padding-left: 1rem;
+}
+
+.corp-features li>div>ul li {
+    font-size: 1.2em;
+}
+
+.corp-features li p {
+    font-size: 1.2em;
+    margin:0;
+}
+
+.corp-features h5 {
+    font-weight: 700;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+}
+
+#banner-carousel p {
+    font-size:1.75em;
+}
+
+#banner-carousel .carousel-indicators {
+    margin: 1rem 0;
+    position: relative;
+    justify-content: left;
+}
+
+.visible {
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+}
+
+@media (max-width: 990px) {
+    .corp-form {
+        transform: none;
+
+    }
+
+    .corp-form .form {}
+
+    .privacy_team_tab_panel .hbspt-form,
+    .small-form .hbspt-form {
+        max-width: none;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #corp-image {
+        display: none;
+    }
+}
+
+@media (max-width: 560px) {
+
+    /*/icon + list*/
+    .corp-features li>div {
+        display: block;
+    }
+}
+
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        top: -50px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0px;
+    }
+}
+
+@-webkit-keyframes fadeDown {
+    0% {
+        opacity: 0;
+        top: -50px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0px;
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.top_nine_banner {
+    background-color: #000;
+    /*opacity: 0;*/
+    transition: background-image 1s;
+    /* animation-duration=1s,   movement=ease,  delayed-time=1s,  movement=normal,  Keyframe-flow=forwards,  keyframeSelector=fadeUp*/
+    /*-webkit-animation: 1s ease 0s normal forwards 1 fadein;
+    animation: 1s ease 0s normal forwards 1 fadein;*/
+}
+
+.top_nine_banner .top_nine_device {
+    position: relative;
+    opacity: 0;
+    top: -50px;
+    -webkit-animation: 1s ease 1s normal forwards 1 fadeDown;
+    animation: 1s ease 1s normal forwards 1 fadeDown;
+    text-align: right;
+}
+
+.top_nine_banner .top_nine_device img {
+    max-width: 470px;
+}
+</style>
+<script type='text/javascript'>
+document.addEventListener('DOMContentLoaded', function(event) {
+    $('.privacy_team_tab > .row > div').first().remove();
+    $('.privacy_team_tab > .row > div:last-child').removeClass().addClass('col-sm-12 col-12');
+    // $('.top_nine_banner').addClass('visible');
+
+
+    var images = ['/userfiles/images/pages/organizations-businesses/business-request/business-request-herobg-prog.jpg'];
+
+    var url = images[Math.floor(Math.random() * images.length)];
+    var img = new Image();
+    img.onload = function() {
+        $('.top_nine_banner').css({ 'background-image': 'url(' + url + ')' });
+    }
+    img.src = url;
+
+});
+</script>
