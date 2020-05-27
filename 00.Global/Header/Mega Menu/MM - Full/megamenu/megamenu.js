@@ -25,17 +25,3 @@ document.addEventListener('DOMContentLoaded', function (event) {
     });
 
 });
-
-// Google Analytics Events on megamenu links
-window.addEventListener('load', function () {
-    $('.megamenu--languages li a').each(function (index) {
-        $(this).on("click", function () {
-            console.log($(this).text());
-            ga('gtag_UA_1350365_39.send', 'event', {
-                'eventCategory': 'Header Megamenu link',
-                'eventAction': 'Language link',
-                'eventLabel': $(this).text()
-            });
-        });
-    });
-});

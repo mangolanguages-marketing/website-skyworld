@@ -54,7 +54,6 @@ body {
 /* ####### Header ####### */
 .header_top {
   z-index: 101;
-  display: none; /*hide top bar */
 }
 .main_header {
   z-index: 100;
