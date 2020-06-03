@@ -42,7 +42,7 @@
 
 .megamenu .megamenu__inner {
   grid-area: main;
-  padding: 2rem 15px 1rem;
+  padding: 2rem 15px;
 }
 
 .megamenu--languages a {
@@ -132,19 +132,23 @@
   color: #333;
 }
 
-.megamenu--organizations a, .megamenu--resources a {
+.megamenu--organizations a,
+.megamenu--resources a {
   color: #333;
 }
 
-.megamenu--organizations a:hover, .megamenu--resources a:hover {
+.megamenu--organizations a:hover,
+.megamenu--resources a:hover {
   color: #111;
 }
 
-.megamenu--organizations h5, .megamenu--resources h5 {
+.megamenu--organizations h5,
+.megamenu--resources h5 {
   font-size: 1em;
 }
 
-.megamenu--organizations .megamenu__inner, .megamenu--resources .megamenu__inner {
+.megamenu--organizations .megamenu__inner,
+.megamenu--resources .megamenu__inner {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 2fr;
@@ -152,15 +156,17 @@
   grid-gap: 30px;
 }
 
-.megamenu--organizations .megamenu__inner > div:nth-child(2), .megamenu--resources .megamenu__inner > div:nth-child(2) {
+.megamenu--organizations .megamenu__inner > div:nth-child(2),
+.megamenu--resources .megamenu__inner > div:nth-child(2) {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
+  grid-gap: 2rem;
 }
 
-.megamenu--organizations .megamenu__inner > div:nth-child(2) a, .megamenu--resources .megamenu__inner > div:nth-child(2) a {
+.megamenu--organizations .megamenu__inner > div:nth-child(2) a,
+.megamenu--resources .megamenu__inner > div:nth-child(2) a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,16 +176,20 @@
           align-items: flex-start;
 }
 
-.megamenu--organizations .megamenu__inner > div:nth-child(2) a img, .megamenu--resources .megamenu__inner > div:nth-child(2) a img {
+.megamenu--organizations .megamenu__inner > div:nth-child(2) a img,
+.megamenu--resources .megamenu__inner > div:nth-child(2) a img {
   width: 4rem;
 }
 
-.megamenu--organizations .megamenu__inner > div:nth-child(2) a div, .megamenu--resources .megamenu__inner > div:nth-child(2) a div {
+.megamenu--organizations .megamenu__inner > div:nth-child(2) a div,
+.megamenu--resources .megamenu__inner > div:nth-child(2) a div {
   padding-left: 1rem;
 }
 
-.megamenu--organizations .megamenu__inner > div:nth-child(2) a div p, .megamenu--resources .megamenu__inner > div:nth-child(2) a div p {
+.megamenu--organizations .megamenu__inner > div:nth-child(2) a div p,
+.megamenu--resources .megamenu__inner > div:nth-child(2) a div p {
   font-size: 0.8em;
   line-height: normal;
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=megamenu.css.map */

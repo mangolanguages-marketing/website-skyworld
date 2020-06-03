@@ -42,7 +42,7 @@
   }
   .megamenu__inner {
     grid-area: main;
-    padding: 2rem 15px 1rem;
+    padding: 2rem 15px;
   }
 }
 
@@ -118,7 +118,8 @@
     }
   }
 }
-.megamenu--organizations, .megamenu--resources {
+.megamenu--organizations,
+.megamenu--resources {
   a {
     color: #333;
 
@@ -139,7 +140,7 @@
     > div:nth-child(2) {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-gap: 1rem;
+      grid-gap: 2rem;
 
       a {
         display: flex;
@@ -155,6 +156,7 @@
           p {
             font-size: 0.8em;
             line-height: normal;
+            margin-bottom: 0;
           }
         }
       }

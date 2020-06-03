@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function (event) {
-    var myStylesLocation = '/userfiles/files/css/megamenu-fulltest/megamenu.css';
+    var myStylesLocation = '/userfiles/files/css/megamenu/megamenu.css';
     $('<link rel="stylesheet" type="text/css" href="' + myStylesLocation + '" >').appendTo('head');
 
-    $.get('/userfiles/files/css/megamenu-fulltest/megamenu.html', function (data) {
+    $.get('/userfiles/files/css/megamenu/megamenu.html', function (data) {
         $('header').append(data);
     });
 
