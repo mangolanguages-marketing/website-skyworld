@@ -3,7 +3,7 @@ window.addEventListener('load', function () {
     $('.header_top a').each(function (index) {
         $(this).on("click", function () {
             console.log($(this).text());
-            ga('gtag_UA_1350365_39.send', 'event', {
+            ga('send', 'event', {
                 'eventCategory': 'Header Top',
                 'eventAction': 'Support Links',
                 'eventLabel': $(this).text()
@@ -14,7 +14,7 @@ window.addEventListener('load', function () {
     $('.megamenu--languages li a').each(function (index) {
         $(this).on("click", function () {
             console.log($(this).text());
-            ga('gtag_UA_1350365_39.send', 'event', {
+            ga('send', 'event', {
                 'eventCategory': 'Header Megamenu link',
                 'eventAction': 'Language link',
                 'eventLabel': $(this).text()
@@ -25,7 +25,7 @@ window.addEventListener('load', function () {
     $('.megamenu--organizations a').each(function (index) {
         $(this).on("click", function () {
             console.log($(this).attr('data-eventlabel'));
-            ga('gtag_UA_1350365_39.send', 'event', {
+            ga('send', 'event', {
                 'eventCategory': 'Header Megamenu link',
                 'eventAction': 'Organizations Menu',
                 'eventLabel': $(this).attr('data-eventlabel')
@@ -36,7 +36,7 @@ window.addEventListener('load', function () {
     $('.megamenu--resources a').each(function (index) {
         $(this).on("click", function () {
             console.log($(this).attr('data-eventlabel'));
-            ga('gtag_UA_1350365_39.send', 'event', {
+            ga('send', 'event', {
                 'eventCategory': 'Header Megamenu link',
                 'eventAction': 'Resources Menu',
                 'eventLabel': $(this).attr('data-eventlabel')
