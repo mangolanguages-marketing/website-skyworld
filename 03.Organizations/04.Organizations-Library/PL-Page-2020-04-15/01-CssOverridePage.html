@@ -1,0 +1,97 @@
+<script type='text/javascript'>
+    document.addEventListener('DOMContentLoaded', function (event) {
+        $('.mango1 > .container > .row > div').first().removeClass().addClass('col-lg-12');
+        $('.mango1 > .container > .row > div').last().hide();
+    });
+</script>
+<style type="text/css">
+    .libraries- .institution {
+        display: none;
+    }
+
+    .embed-responsive {
+        box-shadow: 0 0 24px rgba(0, 0, 0, .25);
+    }
+
+    #vid-library-desktop iframe {
+        height: 300% !important;
+        width: 100% !important;
+        position: absolute !important;
+        top: -100% !important;
+        left: 0 !important;
+        pointer-events: none;
+    }
+
+    #vid-library-mobile {
+        display: none;
+    }
+
+    .top_nine_banner {
+        overflow: hidden;
+    }
+
+    .top_nine_device img {
+        width: 85%;
+        position: relative;
+        bottom: -2rem;
+        animation: fade 300ms cubic-bezier(0.25, 0.1, 0.25, 1) both,
+            translate-up 300ms cubic-bezier(0.25, 0.1, 0.25, 1) both;
+    }
+
+    .mango1 .Live-txt1 .row {
+        margin-bottom: 4rem;
+    }
+
+    .listdeta {
+        margin-bottom: 1rem;
+        padding-left: 1rem;
+        position: relative;
+    }
+
+    .listdeta li {
+        margin: 0 0 .5rem .5rem;
+    }
+
+    .listdeta li:before {
+        content: '\f00c';
+        font-family: FontAwesome;
+        color: var(--color-mango-green);
+        position: absolute;
+        left: 0;
+    }
+
+    .fa-check {
+        color: var(--color-mango-green);
+    }
+
+    .learning_section {
+        background-image: url(/userfiles/images/pages/organizations-libraries/hero-banner-bg-1_10.svg);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    section.icon-instance {
+        display: none;
+    }
+
+    @media (max-width: 990px) {
+        #vid-library-desktop {
+            display: none;
+        }
+
+        #vid-library-mobile {
+            display: block;
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        .mango1 .row .row div,
+        .mango1 .row .row div h1,
+        .mango1 .row .row div p {
+            padding: 0;
+        }
+    }
+
+    @media (max-width: 560px) {}
+</style>
