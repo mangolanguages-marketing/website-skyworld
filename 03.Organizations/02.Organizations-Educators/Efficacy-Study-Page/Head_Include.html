@@ -1,0 +1,161 @@
+<style type="text/css">
+    #efficacy section {
+        overflow: hidden;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    #efficacy section .container {
+        position: relative;
+        padding: 3rem 0;
+    }
+
+    #efficacy section .label {
+        position: absolute;
+        padding: .5rem 1rem;
+        background: #000;
+        text-transform: uppercase;
+        color: #fff;
+        letter-spacing: .1em;
+        top: 0;
+        left: 0;
+    }
+
+    #efficacy__hero p {
+        font-size: 1.25em;
+    }
+
+    #efficacy__hero h1 {
+        font-size: 4em;
+    }
+
+    #efficacy__hero h1 span {
+        border-bottom: 4px solid #FFC845;
+    }
+
+    #efficacy__results {
+        background-color: #FFC845;
+        background-image:url('/userfiles/images/pages/organizations-educators/efficacy/efficacy-bg-results.svg');
+    }
+
+    .efficacy__results__row {
+        margin: 2rem 0;
+        display: flex;
+        position: relative;
+    }
+
+    .efficacy__results__tab {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .efficacy__results__content {
+        padding: 2rem;
+        background: #fff;
+        width: calc(100% - 3rem);
+        display: grid;
+        grid-template-columns: 2fr 3fr 3fr;
+        grid-gap: 4rem;
+    }
+
+    .efficacy__results__content img.icon {
+        max-width: 5rem;
+    }
+
+    .efficacy__results__row .d-flex {
+        align-items: flex-start;
+    }
+
+    #efficacy__participants {
+        background-color: #00B140;
+        background-image:url('/userfiles/images/pages/organizations-educators/efficacy/efficacy-bg-participants.svg');
+        min-height: 320px;
+        color: #fff;
+    }
+
+    #efficacy__participants h1 {
+        font-size: 4em;
+        margin-bottom: .25em;
+    }
+
+    #efficacy__participants p {
+        font-size: 1.25em;
+    }
+
+    .efficacy__participants__info {
+        display: grid;
+        margin-left: 380px;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 4rem;
+    }
+
+    .efficacy__participants__info>div:nth-child(1) {
+        display: flex;
+        align-items: center;
+    }
+
+    .efficacy__participants__info>div:nth-child(2) img {
+        width: 100%;
+    }
+
+    #efficacy__laptop {
+        position: absolute;
+        left: -1rem;
+        bottom: -3.6rem;
+        max-width: 400px;
+    }
+
+    #efficacy__footer {
+        font-size: .75em;
+        border-bottom: 1px solid #ccc;
+    }
+
+    #efficacy__footer .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem 3rem;
+        padding: 3rem 15px;
+    }
+
+    @media screen and (max-width: 991px) {
+        #efficacy section {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        #efficacy__hero {
+            padding-top: 4rem;
+        }
+
+        #efficacy__hero h1 {
+            font-size: 3em;
+        }
+
+        .efficacy__results__tab {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .efficacy__results__content {
+            grid-template-columns: 1fr;
+            width: 100%;
+        }
+
+        #efficacy__laptop {
+            display: none;
+        }
+
+        .efficacy__participants__info {
+            margin: 0;
+            grid-template-columns: 1fr;
+        }
+
+        #efficacy__footer .container {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media screen and (max-width: 576px) {}
+</style>
