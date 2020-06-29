@@ -1,14 +1,14 @@
 <style type="text/css">
     #efficacy section {
         overflow: hidden;
-        background-size:cover;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
     }
 
     #efficacy section .container {
         position: relative;
-        padding: 3rem 0;
+        padding: 3rem 15px;
     }
 
     #efficacy section .label {
@@ -19,11 +19,21 @@
         color: #fff;
         letter-spacing: .1em;
         top: 0;
-        left: 0;
+        left: 15px;
+    }
+
+    #efficacy__hero {
+        background-color: #000;
+        background-image: url('/userfiles/images/pages/organizations-educators/bg-org-educator.jpg');
+        color: #fff;
+    }
+
+    #efficacy__hero .container {
+        padding: 5rem 15px !important;
     }
 
     #efficacy__hero p {
-        font-size: 1.25em;
+        font-size: 1.2em;
     }
 
     #efficacy__hero h1 {
@@ -34,9 +44,13 @@
         border-bottom: 4px solid #FFC845;
     }
 
+    #efficacy__hero img {
+        max-width: 90%;
+    }
+
     #efficacy__results {
         background-color: #FFC845;
-        background-image:url('/userfiles/images/pages/organizations-educators/efficacy/efficacy-bg-results.svg');
+        background-image: url('/userfiles/images/pages/organizations-educators/efficacy/efficacy-bg-results.svg');
     }
 
     .efficacy__results__row {
@@ -69,7 +83,7 @@
 
     #efficacy__participants {
         background-color: #00B140;
-        background-image:url('/userfiles/images/pages/organizations-educators/efficacy/efficacy-bg-participants.svg');
+        background-image: url('/userfiles/images/pages/organizations-educators/efficacy/efficacy-bg-participants.svg');
         min-height: 320px;
         color: #fff;
     }
@@ -102,8 +116,21 @@
     #efficacy__laptop {
         position: absolute;
         left: -1rem;
-        bottom: -3.6rem;
+        bottom: -4rem;
         max-width: 400px;
+    }
+
+    #efficacy__video {
+        background-color: #262626;
+        color: #fff;
+    }
+
+    #efficacy__video .videoDiv>a {
+        box-shadow: 3px 2px 24px rgba(0, 0, 0, .5);
+    }
+
+    #efficacy__video p {
+        color: #999;
     }
 
     #efficacy__footer {
@@ -115,14 +142,9 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 2rem 3rem;
-        padding: 3rem 15px;
     }
 
     @media screen and (max-width: 991px) {
-        #efficacy section {
-            padding-left: 15px;
-            padding-right: 15px;
-        }
 
         #efficacy__hero {
             padding-top: 4rem;
@@ -130,6 +152,10 @@
 
         #efficacy__hero h1 {
             font-size: 3em;
+        }
+
+        #efficacy__hero img {
+            max-width: 50%;
         }
 
         .efficacy__results__tab {
@@ -157,5 +183,9 @@
         }
     }
 
-    @media screen and (max-width: 576px) {}
+    @media screen and (max-width: 576px) {
+        #efficacy__hero img {
+            display: none;
+        }
+    }
 </style>
