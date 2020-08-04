@@ -271,7 +271,7 @@
   background-color: #fff;
   border: medium none;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: 0;
   padding: 5px 10px;
   font-size: 15px;
   color: #000;
@@ -398,7 +398,7 @@
 .hbspt-form input[type="button"] {
   cursor: pointer;
   border: medium none;
-  border-radius: 30px;
+  border-radius: 0;
   color: #fff;
   display: inline-block;
   padding: 15px 18px;
@@ -563,10 +563,7 @@
   color: #fff !important;
   padding: 15px 18px;
   background-color: #fbae3f;
-  -webkit-border-radius: 30px !important;
-  -moz-border-radius: 30px !important;
-  -ms-border-radius: 30px !important;
-  border-radius: 30px !important;
+  border-radius: 0 !important;
   display: block;
   min-width: 130px;
   width: auto;
@@ -582,10 +579,7 @@
   color: #fff !important;
   padding: 15px 18px;
   background-color: #f4a031;
-  -webkit-border-radius: 30px !important;
-  -moz-border-radius: 30px !important;
-  -ms-border-radius: 30px !important;
-  border-radius: 30px !important;
+  border-radius: 0 !important;
   display: block;
   min-width: 130px;
   width: auto;
@@ -674,6 +668,7 @@
         height: auto !important;
         font-size: 16px;
         font-family: "Graphik" !important;
+        letter-spacing: normal;
 
         &:hover,
         &:active,

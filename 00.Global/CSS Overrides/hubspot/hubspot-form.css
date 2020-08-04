@@ -327,7 +327,7 @@
   background-color: #fff;
   border: medium none;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: 0;
   padding: 5px 10px;
   font-size: 15px;
   color: #000;
@@ -473,7 +473,7 @@ form.hs-form
 .hbspt-form input[type="button"] {
   cursor: pointer;
   border: medium none;
-  border-radius: 30px;
+  border-radius: 0;
   color: #fff;
   display: inline-block;
   padding: 15px 18px;
@@ -669,7 +669,7 @@ form.hs-form
   color: #fff !important;
   padding: 15px 18px;
   background-color: #fbae3f;
-  border-radius: 30px !important;
+  border-radius: 0 !important;
   display: block;
   min-width: 130px;
   width: auto;
@@ -686,7 +686,7 @@ form.hs-form
   color: #fff !important;
   padding: 15px 18px;
   background-color: #f4a031;
-  border-radius: 30px !important;
+  border-radius: 0 !important;
   display: block;
   min-width: 130px;
   width: auto;
@@ -787,6 +787,7 @@ form.hs-form
   height: auto !important;
   font-size: 16px;
   font-family: "Graphik" !important;
+  letter-spacing: normal;
 }
 
 .footer-newsletter #hsSubscribeFooter .hbspt-form .hs-button:hover, .footer-newsletter #hsSubscribeFooter .hbspt-form .hs-button:active, .footer-newsletter #hsSubscribeFooter .hbspt-form .hs-button:focus {

@@ -64,10 +64,13 @@ body {
   padding: 0px;
 }
 .logo {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 100px;
   flex: 0 0 100px;
   max-width: 100px;
+
+  a {
+    position: relative;
+    z-index: 10;
+  }
 }
 .main_header nav.main_navigation > ul:nth-child(2) {
   padding: 0 15px 0 0;
@@ -85,6 +88,13 @@ body {
 }
 
 /* ####### Footer ####### */
+
+.footer-social-link a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: normal;
+}
 /* Responsive FOOTER  767px */
 @media screen and (max-width: 767px) {
   /* mobile downloads */

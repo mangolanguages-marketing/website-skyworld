@@ -61,9 +61,14 @@ body {
 
 .logo {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 100px;
-  flex: 0 0 100px;
+      -ms-flex: 0 0 100px;
+          flex: 0 0 100px;
   max-width: 100px;
+}
+
+.logo a {
+  position: relative;
+  z-index: 10;
 }
 
 .main_header nav.main_navigation > ul:nth-child(2) {
@@ -86,6 +91,19 @@ body {
 }
 
 /* ####### Footer ####### */
+.footer-social-link a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: normal;
+}
+
 /* Responsive FOOTER  767px */
 @media screen and (max-width: 767px) {
   /* mobile downloads */

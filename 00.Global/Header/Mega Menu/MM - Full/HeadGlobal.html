@@ -6,3 +6,30 @@
 
 <!-- Hubspot CSS -->
 <link rel="stylesheet" href="/userfiles/files/css/hubspot/hubspot-form.css">
+
+<!-- Global Variables -->
+<link rel="stylesheet" href="/userfiles/files/css/variables.css">
+
+<script>
+    //Function to push GoogleAnalytics Event
+    //Send_GA_Event(category,action,label)
+
+    function Send_GA_Event(category, action, label) {
+        var eventName = category + "::" + action + "::" + label;
+        try {
+            ga('send', 'event', {
+                'eventCategory': category,
+                'eventAction': action,
+                'eventLabel': label
+            });
+            console.log(eventName + "... event successfully sent");
+            return true;
+        } catch (e) {
+            console.log(eventName + "... event failed to send")
+            console.log(e)
+            return false;
+        }
+    }
+
+
+</script>
