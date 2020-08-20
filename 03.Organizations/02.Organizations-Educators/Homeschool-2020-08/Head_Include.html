@@ -1,9 +1,12 @@
 <style type="text/css">
-    body.info-homeschool section {}
+    body.modal-open {
+        padding: 0 !important;
+    }
 
     section#homeschool__hero {
         background-color: #000;
         background-image: url(/userfiles/images/pages/organizations-educators/homeschool/Hero-Banner-01.jpg);
+        position: relative;
     }
 
     section#homeschool__hero .top_nine_device img {
@@ -11,6 +14,54 @@
         max-height: 360px;
         width: auto;
         transform: translate(0, -10px);
+    }
+
+    section#homeschool__hero .container {
+        z-index: 1;
+    }
+
+    .rating>div:nth-child(1) {
+        display: flex;
+        margin-bottom: 1rem;
+        align-items: baseline;
+    }
+
+    .rating>div:nth-child(1)>div:nth-child(2) {
+        margin-left: 1rem;
+    }
+
+    .rating>div:nth-child(1)>div:nth-child(2) strong {
+        font-size: 2.5em;
+    }
+
+    .rating>div:nth-child(2) a {
+        margin-left: .25rem;
+    }
+
+    .rating>div:nth-child(2) a span {
+        text-decoration: underline;
+    }
+
+    .rating>div:nth-child(2) a img {
+        transform: translate(0, -2px);
+    }
+
+    .stars {
+        display: flex;
+    }
+
+    .banner_shape {
+        position: absolute;
+    }
+
+    #banner_shape01 {
+        top: 0;
+        left: 0;
+    }
+
+    #banner_shape02 {
+        bottom: 0;
+        right: 0;
     }
 
     section#homeschool__body section {
@@ -25,6 +76,18 @@
         text-align: center;
     }
 
+    section#body__pricing {
+        background: #F9F9F9;
+    }
+
+    section#body__pricing p {
+        font-size: 1.5em;
+    }
+
+    section#body__pricing p strong {
+        color: var(--color-mango-blue);
+    }
+
     p.big {
         font-size: 1.25em;
     }
@@ -32,6 +95,7 @@
     th,
     td {
         text-align: left;
+        width: 25%;
     }
 
     blockquote {
@@ -121,6 +185,22 @@
         background-color: var(--color-mango-yellow);
     }
 
+    span.disclaimer {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    span.disclaimer::before {
+        content: "";
+        display: inline-block;
+        height: 1em;
+        width: 1em;
+        background: url(/userfiles/images/icons/icon-info-03.svg);
+        background-size: contain;
+        transform: translate(0, 2px);
+        margin-right: .25em;
+    }
+
     @media (max-width: 990px) {
         .video-autoplay {
             display: none;
@@ -128,6 +208,14 @@
 
         .video-autoplay-mobile {
             display: block;
+        }
+
+        #homeschool__hero br {
+            display: none;
+        }
+
+        .banner_shape {
+            display: none;
         }
     }
 </style>
