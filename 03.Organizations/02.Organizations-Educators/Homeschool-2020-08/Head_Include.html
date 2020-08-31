@@ -1,3 +1,20 @@
+<!-- <script>
+    document.addEventListener('DOMContentLoaded', function (event) {
+        $('.collapse').on('show.bs.collapse', function (e) {
+            var $card = $(this).closest('.card');
+            var $open = $($(this).data('parent')).find('.collapse.show');
+
+            var additionalOffset = 20;
+            if ($card.prevAll().filter($open.closest('.card')).length !== 0) {
+                additionalOffset = $open.height();
+            }
+            $('html,body').animate({
+                scrollTop: $card.offset().top - additionalOffset
+            }, 500);
+        });
+    });
+</script> -->
+
 <style type="text/css">
     body.modal-open {
         padding: 0 !important;
@@ -80,7 +97,7 @@
         background: #F9F9F9;
     }
 
-    section#body__pricing p {
+    section#body__pricing strong {
         font-size: 1.5em;
     }
 
@@ -88,8 +105,8 @@
         color: var(--color-mango-blue);
     }
 
-    p.big {
-        font-size: 1.25em;
+    p {
+        font-size: 16px;
     }
 
     th,
@@ -101,10 +118,11 @@
     blockquote {
         font-size: 1.25em;
         font-style: italic;
-        background-color: rgba(0, 0, 0, .04);
+        /* background-color: rgba(0, 0, 0, .04); */
         padding: 2rem 3rem;
         margin: 2rem 0;
         position: relative;
+        border: 1px solid #ccc;
     }
 
     blockquote::before {
@@ -201,6 +219,38 @@
         margin-right: .25em;
     }
 
+    .card {
+        margin-bottom: 1rem;
+    }
+
+    .card ul {
+        list-style: disc;
+        margin: 1.25rem;
+    }
+
+    .card-header {
+        padding: 0;
+        background: rgba(0, 0, 0, .01);
+        border-radius: 0;
+        border: 0 none;
+    }
+
+    .card-header button {
+        display: block;
+        padding: 1rem;
+        width: 100%;
+        text-align: left;
+        color: #111;
+        white-space: normal;
+        border-width: 0 0 1px 0;
+        border-color: rgba(0, 0, 0, .125) !important;
+        line-height: 1.5em !important;
+    }
+
+    .card-header button.collapsed {
+        border: 0 none;
+    }
+
     @media (max-width: 990px) {
         .video-autoplay {
             display: none;
@@ -210,7 +260,7 @@
             display: block;
         }
 
-        #homeschool__hero br {
+        br {
             display: none;
         }
 
