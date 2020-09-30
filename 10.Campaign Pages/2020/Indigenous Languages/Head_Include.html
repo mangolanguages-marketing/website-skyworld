@@ -1,0 +1,76 @@
+<style type="text/css">
+    .inner_banner2 {
+        background-image: url(/userfiles/images/languages/indigenous/Hero-Banner-Endangered-Indigenous.jpg);
+        background-color: #000;
+    }
+
+    section.main {
+        margin: 3rem 0;
+    }
+
+    .vbgallery {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        margin: 2rem 0;
+        padding: 0 15px;
+    }
+
+    .vbgallery__item a {
+        display: block;
+        position: relative;
+    }
+
+    .vbgallery__item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .vbgallery__item h2 {
+        font-size: 1.25em;
+        font-weight: normal;
+        margin: .5rem 0;
+        color: #111;
+    }
+
+    .vbgallery__item ul {
+        margin-bottom: 1rem;
+    }
+
+    .vbgallery__item ul li {
+        font-size: .9em;
+    }
+
+    .vbgallery__item a span {
+        display: flex;
+        color: #fff;
+        font-size: 1.5em;
+        position: absolute;
+        background: rgba(0, 0, 0, .75);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: opacity 300ms;
+        opacity: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .vbgallery__item a:hover span {
+        opacity: 1;
+    }
+
+    @media screen and (max-width: 991px) {
+        .vbgallery {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        .vbgallery {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+</style>
