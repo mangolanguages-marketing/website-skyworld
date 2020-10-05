@@ -1,10 +1,12 @@
 document.addEventListener('DOMContentLoaded', function (event) {
-    var myStylesLocation = '/userfiles/files/css/megamenu-bootstrap/megamenu.css';
-    $('<link rel="stylesheet" type="text/css" href="' + myStylesLocation + '" >').appendTo('head');
+    // var myStylesLocation = '/userfiles/files/css/megamenu-hoverfix/megamenu.css';
+    // $('<link rel="stylesheet" type="text/css" href="' + myStylesLocation + '" >').appendTo('head');
 
-    $.get('/userfiles/files/css/megamenu-bootstrap/megamenu.html', function (data) {
-        $('header').append(data);
-    });
+    // $.get('/userfiles/files/css/megamenu-hoverfix/megamenu.html', function (data) {
+    //     $('header').append(data);
+    // });
+
+    $( '#megamenus' ).appendTo( 'header' );
 
     $('li#nav-languages').hover(function () {
         $('.megamenu--languages').addClass('active');
@@ -23,5 +25,5 @@ document.addEventListener('DOMContentLoaded', function (event) {
     }, function () {
         $('.megamenu--resources').removeClass('active');
     });
-    
+
 });
