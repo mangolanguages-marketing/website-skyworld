@@ -1,0 +1,103 @@
+/* Adjust sizing of logos in hero banner */
+.octbnr {
+  min-height: 768px;
+}
+
+.octbnr .adventureImg {
+  max-width: 600px;
+  padding: 0 1rem;
+}
+.ocbrlgo img {
+  max-width: 200px;
+}
+.bnrgthsplh img {
+  width: 200px;
+}
+
+/* adjust animation and positioning of product videos */
+.prdctpic {
+  background: none;
+}
+.prdctpic,
+.lrndtlsp {
+  transition: transform 300ms, height 300ms;
+}
+.prdctpic:hover {
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.25);
+  transition-delay: 0.5s;
+}
+
+.prdctpic span video {
+  width: 100%;
+  object-fit: cover;
+}
+.prdclnkblk {
+  background: #000;
+}
+
+@media (min-width: 1200px) {
+  .prdctpic:hover {
+    transform: scale(1.1) translate(0, -10%);
+  }
+
+  .crntvdo:hover {
+    transform: scale(1.1) translate(40px, -10%);
+  }
+  .lastvdo:hover {
+    transform: scale(1.1) translate(-40px, -10%);
+  }
+}
+/* Adjust size of red square in "Try it Free" */
+.btombox img {
+  width: 14rem;
+  max-width: none;
+}
+/* Adjust spacing of "Stories to Tell" */
+.clpdd {
+  padding: 0 15px !important;
+}
+/* Adjust sizing of text in "Stories to Tell" */
+.strydetl h3 a {
+    font-size: 1em;
+    letter-spacing: -0.01em;
+  }
+/* Adjust size of logos in Rate area */
+.rate .group-2 img {
+  max-width: 9rem;
+  max-height: 7rem;
+}
+/* Adjust overall heading sizes */
+.plansecc h3,
+.stories-sec h2,
+.advnclan-sec h2,
+.organization h2 {
+  font-size: 2.75em;
+  letter-spacing: -0.01em;
+}
+/* Adjust sizing of pricing section text */
+.plansecc p {
+  font-size: 2.25em;
+}
+/* Adjust spacing of H3 and P above text input boxes */
+.bgpariscontent h3 {
+  margin-bottom: 0.25rem;
+}
+.bgpariscontent p {
+  margin-bottom: 2rem;
+}
+/* Hide decorative squares in banner on mobile. Reveal hidden logo in mobile header */
+@media (max-width: 991px) {
+  .ocbrlgo img,
+  .bnrgthsplh img {
+    display: none;
+  }
+  .main_header_inner .logo img {
+    visibility: visible;
+  }
+}
+/* disclaimer formatting */
+.disclaimer {
+    padding:2rem 0;
+    background:#efefef;
+    font-size:.9em;
+}

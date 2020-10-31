@@ -1,0 +1,26 @@
+<script>
+    document.addEventListener('DOMContentLoaded', function (event) {
+        var timer;
+        var delay = 500;
+        $(".thumbnail").hover(
+            function (event) {
+                var $this = $(this);
+                timer = setTimeout(function () {
+                    $this.children(".popup").addClass("hovered");
+                }, delay);
+            },
+            function () {
+                clearTimeout(timer);
+                $(this).children(".popup").removeClass("hovered");
+            }
+        );
+
+    });
+</script>
+
+<style type="text/css">
+    section#how-it-works {
+        padding: 10rem 0;
+        /* background: #ccc; */
+    }
+</style>
