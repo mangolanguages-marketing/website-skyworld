@@ -807,4 +807,30 @@ form.hs-form
   max-width: 90%;
   display: none !important;
 }
-/*# sourceMappingURL=hubspot-form.css.map */
+
+body div#hs-eu-cookie-confirmation {
+  bottom: 0px;
+  top: auto;
+}
+
+body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner {
+  max-width: 1200px;
+  padding: 10px;
+}
+
+body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner div#hs-en-cookie-confirmation-buttons-area {
+  text-align: center !important;
+}
+
+body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-confirmation-button {
+  background: #1d98d5 !important;
+  border-color: #1d98d5 !important;
+  font-weight: 700 !important;
+}
+
+body div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-decline-button {
+  border: 1px solid #000 !important;
+  color: #000;
+  font-weight: 400 !important;
+}
+/*# sourceMappingURL=hubspot.css.map */

@@ -683,4 +683,15 @@ MEDIA QUERY PRINTER
 }
 
 /* END of PRINT QUERY */
+body.success_story .site_breadcrumb {
+  padding-top: 1rem;
+}
+
+body.success_story blockquote {
+  padding-left: 2rem;
+  border-left: 2px solid var(--color-mango-blue);
+  margin: 2rem 0;
+  font-size: 1.75em;
+  line-height: 1.25em;
+}
 /*# sourceMappingURL=style.css.map */

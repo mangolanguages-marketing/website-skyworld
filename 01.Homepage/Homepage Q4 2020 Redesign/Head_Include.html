@@ -1,4 +1,13 @@
 <style type="text/css">
+    .plansecc a {
+        position: relative;
+        z-index: 10;
+    }
+
+    .plansecc .container .brdshp {
+        z-index: 1;
+    }
+
     .prdctpic:hover {
         transition-delay: 0s;
     }
@@ -46,4 +55,205 @@
             transform: translate(-7%, 0) scale(1.1);
         }
     }
+
+    .advnclan-sec {
+        display: none;
+    }
+
+    .bgpariscontent h3 {
+        line-height: 1.1em;
+        letter-spacing: .01em;
+    }
+
+    .plansecc h3 {
+        margin-bottom: .5rem;
+    }
+
+    .strydetl h3,
+    .strydetl h3 a {
+        font-family: "Graphik LCG", sans-serif;
+        font-weight: 500;
+    }
+
+    .storyinfo p {
+        min-height: 6.5rem;
+    }
+
+    @media (max-width: 1680px) {
+        .storyinfo p {
+            min-height: 8rem;
+        }
+
+        .strydetl h3,
+        .strydetl h3 a {
+            font-size: 24px;
+        }
+    }
+
+    @media (max-width: 1440px) {
+        .strydetl h3 {
+            min-height: 3rem;
+        }
+
+        .storyinfo p {
+            min-height: 9rem;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .storyinfo p {
+            min-height: 10rem;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .storyinfo p {
+            min-height: 12rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        .storyinfo h3,
+        .storyinfo p {
+            min-height: auto;
+        }
+    }
+
+    .ocbtbnr-content {
+        color: #fff;
+    }
+
+    .ocbtbnr-content h4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-gap: 1rem;
+        margin: 2rem 0 .5rem;
+    }
+
+    .ocbtbnr-content .appstore-subhead {
+        margin: 0 0 2rem;
+    }
+
+    .ocbtbnr-content .appstore-subhead img {
+        max-width: 20px;
+        transform: translate(0, -4px);
+        margin-right: .5rem;
+    }
+
+    .prdclnkblk {
+        padding: 1rem;
+    }
+
+    .prdclnkblk h3 {
+        display: block;
+        background: #000;
+        color: #fff;
+        font-size: 18px;
+        font-family: 'Graphik LCG';
+        font-weight: 500;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+    }
+
+    .lrndtlsp p {
+        padding: 0;
+        margin: .5rem 0 0 0;
+    }
+
+    section.adspace-sec2 .hbspt-form {
+        padding: 0;
+    }
+
+    section.adspace-sec2 .hbspt-form .legal-consent-container {
+        display: none;
+    }
+
+    section.adspace-sec2 .hbspt-form .hs-form {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        height: 3rem;
+    }
+
+    section.adspace-sec2 .hbspt-form .hs-form .hs-email {
+        width: 90%;
+        height: 100% !important;
+    }
+
+    section.adspace-sec2 .hbspt-form .hs-form .hs-email .input {
+        height: 100% !important;
+    }
+
+    section.adspace-sec2 .hbspt-form .hs-form .hs-email .input .hs-input {
+        background: none;
+        border: 2px solid #fff;
+        border-radius: 2px 0 0 2px;
+        font-family: "Graphik LCG";
+        font-style: italic;
+        color: #fff !important;
+        font-size: 16px;
+        padding: 0 2rem !important;
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        margin: 0;
+        outline: none;
+        height: 100% !important;
+    }
+
+    section.adspace-sec2 .hbspt-form .hs-form .hs-submit {
+        margin: 0;
+    }
+
+    section.adspace-sec2 .hbspt-form .hs-form .hs-submit .actions {
+        height: 100%;
+        width: 150px;
+    }
+
+    section.adspace-sec2 .hbspt-form .hs-form .hs-submit .actions .hs-button {
+        font-size: 12px !important;
+        font-weight: 600 !important;
+        font-family: "Graphik LCG", sans-serif !important;
+        text-transform: uppercase;
+        letter-spacing: 2px !important;
+        background: #fff !important;
+        color: #000 !important;
+        padding: 0 !important;
+        border-radius: 0 3px 3px 0 !important;
+        border: 0 none !important;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        height: 100% !important;
+        width: 100%;
+    }
+
+    section.adspace-sec2 .hbspt-form .hs-form .hs-submit .actions .hs-button:active,
+    section.adspace-sec2 .hbspt-form .hs-form .hs-submit .actions .hs-button:focus {
+        line-height: normal !important;
+        outline: none;
+        font-family: "Graphik LCG", sans-serif !important;
+        font-weight: 600 !important;
+    }
+
+    section.adspace-sec2 .hbspt-form .hs-form label {
+        display: none;
+    }
+
+    section.adspace-sec2 .hbspt-form .submitted-message {
+        height: auto;
+        color: #fff;
+        overflow: visible;
+        margin: 0;
+        font-size: 1.5em;
+        font-style: italic;
+    }
+
+    /*# sourceMappingURL=2020-11-09-Changes.css.map */
 </style>
