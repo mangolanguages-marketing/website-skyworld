@@ -1,0 +1,79 @@
+.megamenu__inner {
+  -webkit-column-count: 6;
+          column-count: 6;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+@media (max-width: 1024px) {
+  .megamenu__inner {
+    -webkit-column-count: 4;
+            column-count: 4;
+  }
+}
+
+@media (max-width: 768px) {
+  .megamenu__inner {
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
+}
+
+.megamenu__inner > ul {
+  min-width: 0;
+  margin-bottom: 1rem;
+  display: inline-block;
+  width: 100%;
+}
+
+.megamenu__inner > ul a {
+  color: #333;
+  pointer-events: none;
+}
+
+.megamenu__inner > ul:last-child {
+  margin: 0;
+}
+
+.megamenu__inner > ul > li {
+  font-size: 0.9em;
+  margin-bottom: 0.1rem;
+}
+
+.megamenu__inner > ul > li:first-child {
+  font-weight: 600;
+  border: 1px solid #666;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  line-height: 1em;
+}
+
+.megamenu__inner > ul ul.specialty {
+  font-size: 0.9em;
+}
+
+.megamenu__inner > ul ul.specialty li {
+  position: relative;
+  padding-left: 0.75rem;
+  font-style: italic;
+}
+
+.megamenu__inner > ul ul.specialty li:before {
+  content: "+";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-style: normal;
+}
+/*# sourceMappingURL=languagest-list.css.map */

@@ -1,5 +1,26 @@
+section.octbnr {
+  z-index: 0;
+  background: url("/userfiles/images/pages/homepage/homepage-2020-q4/homepage-hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+section.octbnr #bgvid {
+  z-index: 1;
+}
+
+section.octbnr .overlay {
+  z-index: 2;
+}
+
+section.octbnr .ocbrlgo, section.octbnr .bnrgthsplh {
+  z-index: 3;
+}
+
 section.octbnr .ocbtbnr-content {
   color: #fff;
+  z-index: 4;
 }
 
 section.octbnr .ocbtbnr-content h4 {
@@ -200,6 +221,12 @@ section.adspace-sec2 .hbspt-form .hs-form .hs-submit {
 section.adspace-sec2 .hbspt-form .hs-form .hs-submit .actions {
   height: 100%;
   width: 150px;
+}
+
+@media (max-width: 768px) {
+  section.adspace-sec2 .hbspt-form .hs-form .hs-submit .actions {
+    width: 90px;
+  }
 }
 
 section.adspace-sec2 .hbspt-form .hs-form .hs-submit .actions .hs-button {

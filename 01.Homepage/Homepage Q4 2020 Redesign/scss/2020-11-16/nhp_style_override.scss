@@ -1,7 +1,23 @@
 // Main Banner
 section.octbnr {
+  z-index: 0;
+  background:url('/userfiles/images/pages/homepage/homepage-2020-q4/homepage-hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+
+  #bgvid {
+    z-index: 1;
+  }
+  .overlay {
+    z-index: 2;
+  }
+  .ocbrlgo, .bnrgthsplh {
+    z-index:3;
+  }
   .ocbtbnr-content {
     color: #fff;
+    z-index:4;
     h4 {
       display: flex;
       align-items: center;
@@ -208,6 +224,11 @@ section.adspace-sec2 {
         .actions {
           height: 100%;
           width: 150px;
+
+          @media (max-width: 768px) {
+            width: 90px;
+          }
+
           .hs-button {
             font-size: 12px !important;
             font-weight: 600 !important;
