@@ -1,0 +1,158 @@
+#efficacy section {
+  overflow: hidden;
+}
+
+#efficacy section .container {
+  position: relative;
+  padding: 4rem 15px;
+}
+
+@media screen and (max-width: 991px) {
+  #efficacy section .container br {
+    display: none;
+  }
+}
+
+#efficacy section .container .row {
+  position: relative;
+}
+
+#efficacy section .container .row.tabbed .tabbed__icon {
+  width: 3rem;
+  height: auto;
+  position: absolute;
+  left: 15px;
+  top: 8px;
+}
+
+#efficacy section .container .row.tabbed > div:nth-of-type(1) {
+  padding-left: 5rem;
+}
+
+@media screen and (max-width: 991px) {
+  #efficacy section .container .row.tabbed .tabbed__icon {
+    display: none;
+  }
+  #efficacy section .container .row.tabbed > div:nth-of-type(1) {
+    padding-left: 15px;
+  }
+  #efficacy section .container .row.tabbed > div[class^="col-"] {
+    margin-bottom: 3rem;
+  }
+}
+
+#efficacy section .label {
+  position: absolute;
+  padding: 0.5rem 1rem;
+  background: #000;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.1em;
+  top: 0;
+  left: 15px;
+}
+
+#efficacy__hero {
+  background-color: #000;
+  background-image: url("/userfiles/images/pages/organizations-libraries/efficacy/efficacy-hero-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+  min-height: 800px;
+}
+
+#efficacy__hero h1 {
+  font-size: 4em;
+}
+
+#efficacy__hero p {
+  font-size: 1.2em;
+}
+
+#efficacy__hero img {
+  -webkit-transform: scale(2) translate(10rem, 0.5rem);
+          transform: scale(2) translate(10rem, 0.5rem);
+}
+
+@media screen and (max-width: 991px) {
+  #efficacy__hero img {
+    display: none;
+  }
+}
+
+#efficacy__results h2 {
+  font-size: 3em;
+  color: var(--color-mango-blue);
+}
+
+#efficacy__participants {
+  color: #fff;
+  background-color: #000;
+  background-image: url("/userfiles/images/pages/organizations-libraries/efficacy/efficacy-rate-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#efficacy__participants h2 {
+  font-size: 3em;
+  color: var(--color-mango-yellow);
+}
+
+#efficacy__college {
+  color: #fff;
+  background-color: #000;
+  background-image: url("https://mangolanguages.com/userfiles/images/backgrounds/CTA_Pattern_Blue_%406x.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 50%;
+}
+
+@media screen and (max-width: 991px) {
+  #efficacy__college {
+    background-image: none;
+  }
+}
+
+#efficacy__college h2 {
+  font-size: 3em;
+  color: var(--color-mango-yellow);
+}
+
+#efficacy__video {
+  color: #fff;
+  background-image: url("/userfiles/images/pages/organizations-libraries/efficacy/efficacy-video-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#efficacy__video img {
+  -webkit-box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.5);
+}
+
+#efficacy__disclaimer {
+  border-top: 1px solid #ccc;
+}
+
+#efficacy__disclaimer .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem 3rem;
+}
+
+#efficacy__disclaimer .container * {
+  font-size: 0.75em;
+}
+
+@media screen and (max-width: 991px) {
+  #efficacy__disclaimer .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=efficacy.css.map */

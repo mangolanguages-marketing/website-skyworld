@@ -1,0 +1,133 @@
+#efficacy {
+  section {
+    overflow: hidden;
+    .container {
+      position: relative;
+      padding: 4rem 15px;
+      @media screen and (max-width: 991px) {
+        br {
+          display: none;
+        }
+      }
+      .row {
+        position: relative;
+
+        &.tabbed {
+          .tabbed__icon {
+            width: 3rem;
+            height: auto;
+            position: absolute;
+            left: 15px;
+            top: 8px;
+          }
+          > div:nth-of-type(1) {
+            padding-left: 5rem;
+          }
+          @media screen and (max-width: 991px) {
+            .tabbed__icon {
+              display: none;
+            }
+            > div:nth-of-type(1) {
+              padding-left: 15px;
+            }
+            > div[class^="col-"] {
+              margin-bottom: 3rem;
+            }
+          }
+        }
+      }
+    }
+    .label {
+      position: absolute;
+      padding: 0.5rem 1rem;
+      background: #000;
+      text-transform: uppercase;
+      color: #fff;
+      letter-spacing: 0.1em;
+      top: 0;
+      left: 15px;
+    }
+  }
+  &__hero {
+    background-color: #000;
+    background-image: url("/userfiles/images/pages/organizations-libraries/efficacy/efficacy-hero-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+    min-height: 800px;
+
+    h1 {
+      font-size: 4em;
+    }
+    p {
+      font-size: 1.2em;
+    }
+    img {
+      transform: scale(2) translate(10rem, 0.5rem);
+
+      @media screen and (max-width: 991px) {
+        display: none;
+      }
+    }
+  }
+  &__results {
+    h2 {
+      font-size: 3em;
+      color: var(--color-mango-blue);
+    }
+  }
+  &__participants {
+    color: #fff;
+    background-color: #000;
+    background-image: url("/userfiles/images/pages/organizations-libraries/efficacy/efficacy-rate-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    h2 {
+      font-size: 3em;
+      color: var(--color-mango-yellow);
+    }
+  }
+  &__college {
+    color: #fff;
+    background-color: #000;
+    background-image: url("https://mangolanguages.com/userfiles/images/backgrounds/CTA_Pattern_Blue_%406x.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50%;
+
+    @media screen and (max-width: 991px) {
+      background-image: none;
+    }
+
+    h2 {
+      font-size: 3em;
+      color: var(--color-mango-yellow);
+    }
+  }
+  &__video {
+    color: #fff;
+    background-image: url("/userfiles/images/pages/organizations-libraries/efficacy/efficacy-video-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    img {
+      box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.5);
+    }
+  }
+  &__disclaimer {
+    border-top: 1px solid #ccc;
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem 3rem;
+      * {
+        font-size: 0.75em;
+      }
+      @media screen and (max-width: 991px) {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}

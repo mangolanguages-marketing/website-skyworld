@@ -694,4 +694,8 @@ body.success_story blockquote {
   font-size: 1.75em;
   line-height: 1.25em;
 }
+
+.footer-newsletter .hbspt-form .legal-consent-container {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
